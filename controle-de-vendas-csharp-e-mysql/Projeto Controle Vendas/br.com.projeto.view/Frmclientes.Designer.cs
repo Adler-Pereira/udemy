@@ -61,14 +61,14 @@
             this.txtcodigo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabelaCliente = new System.Windows.Forms.DataGridView();
+            this.btnpesquisar = new System.Windows.Forms.Button();
+            this.txtpesquisa = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.btnnovo = new System.Windows.Forms.Button();
             this.btnsalvar = new System.Windows.Forms.Button();
             this.btnexcluir = new System.Windows.Forms.Button();
             this.btneditar = new System.Windows.Forms.Button();
-            this.txtpesquisa = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.btnpesquisar = new System.Windows.Forms.Button();
-            this.tabelaCliente = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.tabClientes.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -432,6 +432,46 @@
             this.tabPage2.Text = "Consulta";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // tabelaCliente
+            // 
+            this.tabelaCliente.AllowUserToAddRows = false;
+            this.tabelaCliente.AllowUserToDeleteRows = false;
+            this.tabelaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tabelaCliente.Location = new System.Drawing.Point(16, 87);
+            this.tabelaCliente.Name = "tabelaCliente";
+            this.tabelaCliente.ReadOnly = true;
+            this.tabelaCliente.Size = new System.Drawing.Size(775, 227);
+            this.tabelaCliente.TabIndex = 7;
+            // 
+            // btnpesquisar
+            // 
+            this.btnpesquisar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnpesquisar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpesquisar.ForeColor = System.Drawing.Color.White;
+            this.btnpesquisar.Location = new System.Drawing.Point(364, 34);
+            this.btnpesquisar.Name = "btnpesquisar";
+            this.btnpesquisar.Size = new System.Drawing.Size(114, 40);
+            this.btnpesquisar.TabIndex = 6;
+            this.btnpesquisar.Text = "Pesquisar";
+            this.btnpesquisar.UseVisualStyleBackColor = false;
+            // 
+            // txtpesquisa
+            // 
+            this.txtpesquisa.Location = new System.Drawing.Point(92, 42);
+            this.txtpesquisa.Name = "txtpesquisa";
+            this.txtpesquisa.Size = new System.Drawing.Size(246, 26);
+            this.txtpesquisa.TabIndex = 5;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label16.Location = new System.Drawing.Point(12, 45);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(55, 20);
+            this.label16.TabIndex = 4;
+            this.label16.Text = "Nome:";
+            // 
             // btnnovo
             // 
             this.btnnovo.BackColor = System.Drawing.SystemColors.Highlight;
@@ -455,6 +495,7 @@
             this.btnsalvar.TabIndex = 3;
             this.btnsalvar.Text = "Salvar";
             this.btnsalvar.UseVisualStyleBackColor = false;
+            this.btnsalvar.Click += new System.EventHandler(this.btnsalvar_Click);
             // 
             // btnexcluir
             // 
@@ -479,46 +520,6 @@
             this.btneditar.TabIndex = 5;
             this.btneditar.Text = "Editar";
             this.btneditar.UseVisualStyleBackColor = false;
-            // 
-            // txtpesquisa
-            // 
-            this.txtpesquisa.Location = new System.Drawing.Point(92, 42);
-            this.txtpesquisa.Name = "txtpesquisa";
-            this.txtpesquisa.Size = new System.Drawing.Size(246, 26);
-            this.txtpesquisa.TabIndex = 5;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label16.Location = new System.Drawing.Point(12, 45);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(55, 20);
-            this.label16.TabIndex = 4;
-            this.label16.Text = "Nome:";
-            // 
-            // btnpesquisar
-            // 
-            this.btnpesquisar.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnpesquisar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnpesquisar.ForeColor = System.Drawing.Color.White;
-            this.btnpesquisar.Location = new System.Drawing.Point(364, 34);
-            this.btnpesquisar.Name = "btnpesquisar";
-            this.btnpesquisar.Size = new System.Drawing.Size(114, 40);
-            this.btnpesquisar.TabIndex = 6;
-            this.btnpesquisar.Text = "Pesquisar";
-            this.btnpesquisar.UseVisualStyleBackColor = false;
-            // 
-            // tabelaCliente
-            // 
-            this.tabelaCliente.AllowUserToAddRows = false;
-            this.tabelaCliente.AllowUserToDeleteRows = false;
-            this.tabelaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tabelaCliente.Location = new System.Drawing.Point(16, 87);
-            this.tabelaCliente.Name = "tabelaCliente";
-            this.tabelaCliente.ReadOnly = true;
-            this.tabelaCliente.Size = new System.Drawing.Size(775, 227);
-            this.tabelaCliente.TabIndex = 7;
             // 
             // Frmclientes
             // 

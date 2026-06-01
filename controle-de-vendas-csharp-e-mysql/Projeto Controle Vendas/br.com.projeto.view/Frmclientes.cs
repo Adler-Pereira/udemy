@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projeto_Controle_Vendas.br.com.projeto.model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
         public Frmclientes()
         {
             InitializeComponent();
+        }
+
+        private void btnsalvar_Click(object sender, EventArgs e)
+        {
+            Cliente obj = new Cliente();
         }
     }
 }
