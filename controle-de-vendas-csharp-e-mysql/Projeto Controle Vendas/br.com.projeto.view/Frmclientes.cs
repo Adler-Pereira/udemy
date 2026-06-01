@@ -1,4 +1,5 @@
-﻿using Projeto_Controle_Vendas.br.com.projeto.model;
+﻿using Projeto_Controle_Vendas.br.com.projeto.dao;
+using Projeto_Controle_Vendas.br.com.projeto.model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,6 +22,23 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
         private void btnsalvar_Click(object sender, EventArgs e)
         {
             Cliente obj = new Cliente();
+
+            obj.nome = txtnome.Text;
+            obj.rg = txtrg.Text;
+            obj.cpf = txtcpf.Text;
+            obj.email = txtemail.Text;
+            obj.telefone = txttelefone.Text;
+            obj.celular = txtcelular.Text;
+            obj.cep = txtcep.Text;
+            obj.endereco = txtendereco.Text;
+            obj.numero = int.Parse(txtnumero.Text);
+            obj.complemento = txtcomp.Text;
+            obj.bairro = txtbairro.Text;
+            obj.cidade = txtcidade.Text;
+            obj.estado = cbuf.Text;
+
+            ClienteDAO dao = new ClienteDAO();
+            dao.cadastrarCliente(obj);
         }
     }
 }
