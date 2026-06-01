@@ -1,0 +1,41 @@
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\Projeto Controle Vendas.exe.config
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\Projeto Controle Vendas.exe
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\Projeto Controle Vendas.pdb
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\BouncyCastle.Cryptography.dll
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\Google.Protobuf.dll
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\K4os.Compression.LZ4.dll
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\K4os.Hash.xxHash.dll
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\MySql.Data.dll
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\System.Buffers.dll
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\System.IO.Pipelines.dll
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\System.Memory.dll
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\System.Numerics.Vectors.dll
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\ZstdSharp.dll
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\BouncyCastle.Cryptography.xml
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\Google.Protobuf.pdb
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\Google.Protobuf.xml
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\K4os.Compression.LZ4.xml
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\K4os.Hash.xxHash.xml
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\MySql.Data.xml
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\System.Buffers.xml
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\System.IO.Pipelines.xml
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\System.Memory.xml
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\System.Numerics.Vectors.xml
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\obj\Debug\Projeto Controle Vendas.csproj.AssemblyReference.cache
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\obj\Debug\Projeto_Controle_Vendas.Properties.Resources.resources
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\obj\Debug\Projeto Controle Vendas.csproj.GenerateResource.cache
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\obj\Debug\Projeto Controle Vendas.csproj.CoreCompileInputs.cache
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\obj\Debug\Projeto .EC285273.Up2Date
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\obj\Debug\Projeto Controle Vendas.exe
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\obj\Debug\Projeto Controle Vendas.pdb
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\obj\Debug\Projeto_Controle_Vendas.br.com.projeto.view.Frmclientes.resources
