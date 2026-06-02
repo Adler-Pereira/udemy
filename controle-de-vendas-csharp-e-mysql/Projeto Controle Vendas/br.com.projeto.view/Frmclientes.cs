@@ -39,6 +39,8 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
 
             ClienteDAO dao = new ClienteDAO();
             dao.cadastrarCliente(obj);
+
+            tabelaCliente.DataSource = dao.listarClientes();
         }
 
         private void Frmclientes_Load(object sender, EventArgs e)
@@ -63,6 +65,46 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
             txtbairro.Text = tabelaCliente.CurrentRow.Cells[11].Value.ToString();
             txtcidade.Text = tabelaCliente.CurrentRow.Cells[12].Value.ToString();
             cbuf.Text = tabelaCliente.CurrentRow.Cells[13].Value.ToString();
+
+            tabClientes.SelectedTab = tabPage1;
+        }
+
+        private void btnexcluir_Click(object sender, EventArgs e)
+        {
+            Cliente obj = new Cliente();
+
+            obj.codigo = int.Parse(txtcodigo.Text);
+
+            ClienteDAO dao = new ClienteDAO();
+
+            dao.excluirCliente(obj);
+
+            tabelaCliente.DataSource = dao.listarClientes();
+        }
+
+        private void btneditar_Click(object sender, EventArgs e)
+        {
+            Cliente obj = new Cliente();
+
+            obj.codigo = int.Parse(txtcodigo.Text);
+            obj.nome = txtnome.Text;
+            obj.rg = txtrg.Text;
+            obj.cpf = txtcpf.Text;
+            obj.email = txtemail.Text;
+            obj.telefone = txttelefone.Text;
+            obj.celular = txtcelular.Text;
+            obj.cep = txtcep.Text;
+            obj.endereco = txtendereco.Text;
+            obj.numero = int.Parse(txtnumero.Text);
+            obj.complemento = txtcomp.Text;
+            obj.bairro = txtbairro.Text;
+            obj.cidade = txtcidade.Text;
+            obj.estado = cbuf.Text;
+
+            ClienteDAO dao = new ClienteDAO();
+            dao.alterarCliente(obj);
+
+            tabelaCliente.DataSource = dao.listarClientes();
         }
     }
 }

@@ -48,6 +48,7 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
                 executacmd.ExecuteNonQuery();
 
                 MessageBox.Show("Cliente cadastrado com sucesso!");
+                conexao.Close();
             }
             catch (Exception erro)
             {
@@ -71,6 +72,7 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
 
                 MySqlDataAdapter da = new MySqlDataAdapter(executacmd);
                 da.Fill(tabelacliente);
+                conexao.Close();
 
                 return tabelacliente;
             }
@@ -87,19 +89,19 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
         {
             try
             {
-                string sql = @"update tb_clientes set (nome=@nome,
-                                                       rg=@rg,
-                                                       cpf=@cpf,
-                                                       email=@email,
-                                                       telefone=@telefone,
-                                                       celular=@celular,
-                                                       cep=@cep,
-                                                       endereco=@endereco,
-                                                       numero=@numero,
-                                                       complemento=@complemento,
-                                                       bairro=@bairro,
-                                                       cidade=@cidade,
-                                                       estado=@estado)
+                string sql = @"update tb_clientes set nome=@nome,
+                                                      rg=@rg,
+                                                      cpf=@cpf,
+                                                      email=@email,
+                                                      telefone=@telefone,
+                                                      celular=@celular,
+                                                      cep=@cep,
+                                                      endereco=@endereco,
+                                                      numero=@numero,
+                                                      complemento=@complemento,
+                                                      bairro=@bairro,
+                                                      cidade=@cidade,
+                                                      estado=@estado
                                where id=@id";
 
                 MySqlCommand executacmd = new MySqlCommand(sql, conexao);
@@ -123,6 +125,7 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
                 executacmd.ExecuteNonQuery();
 
                 MessageBox.Show("Cliente alterado com sucesso!");
+                conexao.Close();
             }
             catch (Exception erro)
             {
@@ -148,6 +151,7 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
                 executacmd.ExecuteNonQuery();
 
                 MessageBox.Show("Cliente excluído com sucesso!");
+                conexao.Close();
             }
             catch (Exception erro)
             {
