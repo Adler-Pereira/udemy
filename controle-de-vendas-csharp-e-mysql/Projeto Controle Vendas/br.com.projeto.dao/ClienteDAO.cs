@@ -3,6 +3,7 @@ using Projeto_Controle_Vendas.br.com.projeto.conexao;
 using Projeto_Controle_Vendas.br.com.projeto.model;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,6 +29,7 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
                            values (@nome, @rg, @cpf, @email, @telefone, @celular, @cep, @endereco, @numero, @complemento, @bairro, @cidade, @estado)";
 
                 MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+
                 executacmd.Parameters.AddWithValue("@nome", obj.nome);
                 executacmd.Parameters.AddWithValue("@rg", obj.rg);
                 executacmd.Parameters.AddWithValue("@cpf", obj.cpf);
@@ -50,6 +52,32 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
             catch (Exception erro)
             {
                 MessageBox.Show("Aconteceu o erro: " + erro);
+            }
+        }
+        #endregion
+
+        #region ListarCliente
+        public DataTable listarClientes()
+        {
+            try
+            {
+                DataTable tabelacliente = new DataTable();
+                string sql = "select * from tb_clientes";
+
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+
+                conexao.Open();
+                executacmd.ExecuteNonQuery();
+
+                MySqlDataAdapter da = new MySqlDataAdapter(executacmd);
+                da.Fill(tabelacliente);
+
+                return tabelacliente;
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro ao executar o comando sql: " + erro);
+                return null;
             }
         }
         #endregion
