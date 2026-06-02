@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using Mysqlx;
 using Projeto_Controle_Vendas.br.com.projeto.conexao;
 using Projeto_Controle_Vendas.br.com.projeto.model;
 using System;
@@ -66,6 +67,34 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
                 string sql = "select * from tb_clientes";
 
                 MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+
+                conexao.Open();
+                executacmd.ExecuteNonQuery();
+
+                MySqlDataAdapter da = new MySqlDataAdapter(executacmd);
+                da.Fill(tabelacliente);
+                conexao.Close();
+
+                return tabelacliente;
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro ao executar o comando sql: " + erro);
+                return null;
+            }
+        }
+        #endregion
+
+        #region BuscarClientePorNome
+        public DataTable buscarClientePorNome(string nome)
+        {
+            try
+            {
+                DataTable tabelacliente = new DataTable();
+                string sql = "select * from tb_clientes where nome=@nome";
+
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+                executacmd.Parameters.AddWithValue("@nome", nome);
 
                 conexao.Open();
                 executacmd.ExecuteNonQuery();
