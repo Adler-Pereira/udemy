@@ -46,5 +46,23 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
             ClienteDAO clienteDAO = new ClienteDAO();
             tabelaCliente.DataSource = clienteDAO.listarClientes();
         }
+
+        private void tabelaCliente_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtcodigo.Text = tabelaCliente.CurrentRow.Cells[0].Value.ToString();
+            txtnome.Text = tabelaCliente.CurrentRow.Cells[1].Value.ToString();
+            txtrg.Text = tabelaCliente.CurrentRow.Cells[2].Value.ToString();
+            txtcpf.Text = tabelaCliente.CurrentRow.Cells[3].Value.ToString();
+            txtemail.Text = tabelaCliente.CurrentRow.Cells[4].Value.ToString();
+            txttelefone.Text = tabelaCliente.CurrentRow.Cells[5].Value.ToString();
+            txtcelular.Text = tabelaCliente.CurrentRow.Cells[6].Value.ToString();
+            txtcep.Text = tabelaCliente.CurrentRow.Cells[7].Value.ToString();
+            txtendereco.Text = tabelaCliente.CurrentRow.Cells[8].Value.ToString();
+            txtnumero.Text = tabelaCliente.CurrentRow.Cells[9].Value.ToString();
+            txtcomp.Text = tabelaCliente.CurrentRow.Cells[10].Value.ToString();
+            txtbairro.Text = tabelaCliente.CurrentRow.Cells[11].Value.ToString();
+            txtcidade.Text = tabelaCliente.CurrentRow.Cells[12].Value.ToString();
+            cbuf.Text = tabelaCliente.CurrentRow.Cells[13].Value.ToString();
+        }
     }
 }
