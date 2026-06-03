@@ -113,6 +113,34 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
         }
         #endregion
 
+        #region ListarClientePorNome
+        public DataTable listarClientePorNome(string nome)
+        {
+            try
+            {
+                DataTable tabelacliente = new DataTable();
+                string sql = "select * from tb_clientes where nome like @nome";
+
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+                executacmd.Parameters.AddWithValue("@nome", nome);
+
+                conexao.Open();
+                executacmd.ExecuteNonQuery();
+
+                MySqlDataAdapter da = new MySqlDataAdapter(executacmd);
+                da.Fill(tabelacliente);
+                conexao.Close();
+
+                return tabelacliente;
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro ao executar o comando sql: " + erro);
+                return null;
+            }
+        }
+        #endregion
+
         #region AlterarCliente
         public void alterarCliente(Cliente obj)
         {

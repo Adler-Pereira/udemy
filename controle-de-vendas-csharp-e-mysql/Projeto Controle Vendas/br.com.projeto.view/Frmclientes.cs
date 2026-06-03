@@ -114,6 +114,20 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
             ClienteDAO dao = new ClienteDAO();
 
             tabelaCliente.DataSource = dao.buscarClientePorNome(nome);
+
+            if (tabelaCliente.Rows.Count == 0)
+            {
+                tabelaCliente.DataSource = dao.listarClientes();
+            }
+        }
+
+        private void txtpesquisa_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string nome = "%" + txtpesquisa.Text + "%";
+
+            ClienteDAO dao = new ClienteDAO();
+
+            tabelaCliente.DataSource = dao.listarClientePorNome(nome);
         }
     }
 }

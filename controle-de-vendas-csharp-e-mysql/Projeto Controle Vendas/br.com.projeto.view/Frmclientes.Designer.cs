@@ -463,6 +463,7 @@
             this.txtpesquisa.Name = "txtpesquisa";
             this.txtpesquisa.Size = new System.Drawing.Size(246, 26);
             this.txtpesquisa.TabIndex = 5;
+            this.txtpesquisa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtpesquisa_KeyPress);
             // 
             // label16
             // 
