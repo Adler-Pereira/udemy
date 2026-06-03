@@ -69,6 +69,7 @@
             this.btnsalvar = new System.Windows.Forms.Button();
             this.btnexcluir = new System.Windows.Forms.Button();
             this.btneditar = new System.Windows.Forms.Button();
+            this.btnbuscar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabClientes.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -110,6 +111,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btnbuscar);
             this.tabPage1.Controls.Add(this.txtcomp);
             this.tabPage1.Controls.Add(this.label15);
             this.tabPage1.Controls.Add(this.txtnumero);
@@ -282,7 +284,7 @@
             this.txtcep.Location = new System.Drawing.Point(367, 163);
             this.txtcep.Mask = "00000-999";
             this.txtcep.Name = "txtcep";
-            this.txtcep.Size = new System.Drawing.Size(133, 26);
+            this.txtcep.Size = new System.Drawing.Size(122, 26);
             this.txtcep.TabIndex = 16;
             // 
             // label9
@@ -526,6 +528,19 @@
             this.btneditar.UseVisualStyleBackColor = false;
             this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
             // 
+            // btnbuscar
+            // 
+            this.btnbuscar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnbuscar.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbuscar.ForeColor = System.Drawing.Color.White;
+            this.btnbuscar.Location = new System.Drawing.Point(494, 158);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(37, 34);
+            this.btnbuscar.TabIndex = 6;
+            this.btnbuscar.Text = "Q";
+            this.btnbuscar.UseVisualStyleBackColor = false;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
+            // 
             // Frmclientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -596,5 +611,6 @@
         private System.Windows.Forms.Button btnpesquisar;
         private System.Windows.Forms.TextBox txtpesquisa;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btnbuscar;
     }
 }
