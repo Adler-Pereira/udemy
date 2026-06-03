@@ -152,5 +152,10 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
                 MessageBox.Show("Localização não encontrada. Por favor, preencha os campos manualmente.");
             }
         }
+
+        private void btnlimpacampos_Click(object sender, EventArgs e)
+        {
+            new Helpers().LimparTela(this);
+        }
     }
 }

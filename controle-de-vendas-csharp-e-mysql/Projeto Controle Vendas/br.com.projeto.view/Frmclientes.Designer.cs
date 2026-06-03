@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabClientes = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnbuscar = new System.Windows.Forms.Button();
             this.txtcomp = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.txtnumero = new System.Windows.Forms.TextBox();
@@ -69,7 +70,7 @@
             this.btnsalvar = new System.Windows.Forms.Button();
             this.btnexcluir = new System.Windows.Forms.Button();
             this.btneditar = new System.Windows.Forms.Button();
-            this.btnbuscar = new System.Windows.Forms.Button();
+            this.btnlimpacampos = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabClientes.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -147,6 +148,19 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Dados Pessoais";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // btnbuscar
+            // 
+            this.btnbuscar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnbuscar.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbuscar.ForeColor = System.Drawing.Color.White;
+            this.btnbuscar.Location = new System.Drawing.Point(494, 158);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(37, 34);
+            this.btnbuscar.TabIndex = 6;
+            this.btnbuscar.Text = "Q";
+            this.btnbuscar.UseVisualStyleBackColor = false;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 
             // txtcomp
             // 
@@ -482,7 +496,7 @@
             this.btnnovo.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnnovo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnnovo.ForeColor = System.Drawing.Color.White;
-            this.btnnovo.Location = new System.Drawing.Point(169, 488);
+            this.btnnovo.Location = new System.Drawing.Point(118, 488);
             this.btnnovo.Name = "btnnovo";
             this.btnnovo.Size = new System.Drawing.Size(114, 40);
             this.btnnovo.TabIndex = 2;
@@ -494,7 +508,7 @@
             this.btnsalvar.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnsalvar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsalvar.ForeColor = System.Drawing.Color.White;
-            this.btnsalvar.Location = new System.Drawing.Point(289, 488);
+            this.btnsalvar.Location = new System.Drawing.Point(238, 488);
             this.btnsalvar.Name = "btnsalvar";
             this.btnsalvar.Size = new System.Drawing.Size(114, 40);
             this.btnsalvar.TabIndex = 3;
@@ -507,7 +521,7 @@
             this.btnexcluir.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnexcluir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnexcluir.ForeColor = System.Drawing.Color.White;
-            this.btnexcluir.Location = new System.Drawing.Point(409, 488);
+            this.btnexcluir.Location = new System.Drawing.Point(358, 488);
             this.btnexcluir.Name = "btnexcluir";
             this.btnexcluir.Size = new System.Drawing.Size(114, 40);
             this.btnexcluir.TabIndex = 4;
@@ -520,7 +534,7 @@
             this.btneditar.BackColor = System.Drawing.SystemColors.Highlight;
             this.btneditar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btneditar.ForeColor = System.Drawing.Color.White;
-            this.btneditar.Location = new System.Drawing.Point(529, 488);
+            this.btneditar.Location = new System.Drawing.Point(478, 488);
             this.btneditar.Name = "btneditar";
             this.btneditar.Size = new System.Drawing.Size(114, 40);
             this.btneditar.TabIndex = 5;
@@ -528,24 +542,25 @@
             this.btneditar.UseVisualStyleBackColor = false;
             this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
             // 
-            // btnbuscar
+            // btnlimpacampos
             // 
-            this.btnbuscar.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnbuscar.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbuscar.ForeColor = System.Drawing.Color.White;
-            this.btnbuscar.Location = new System.Drawing.Point(494, 158);
-            this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(37, 34);
-            this.btnbuscar.TabIndex = 6;
-            this.btnbuscar.Text = "Q";
-            this.btnbuscar.UseVisualStyleBackColor = false;
-            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
+            this.btnlimpacampos.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnlimpacampos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlimpacampos.ForeColor = System.Drawing.Color.White;
+            this.btnlimpacampos.Location = new System.Drawing.Point(598, 488);
+            this.btnlimpacampos.Name = "btnlimpacampos";
+            this.btnlimpacampos.Size = new System.Drawing.Size(143, 40);
+            this.btnlimpacampos.TabIndex = 6;
+            this.btnlimpacampos.Text = "Limpar Campos";
+            this.btnlimpacampos.UseVisualStyleBackColor = false;
+            this.btnlimpacampos.Click += new System.EventHandler(this.btnlimpacampos_Click);
             // 
             // Frmclientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 561);
+            this.Controls.Add(this.btnlimpacampos);
             this.Controls.Add(this.btneditar);
             this.Controls.Add(this.btnexcluir);
             this.Controls.Add(this.btnsalvar);
@@ -612,5 +627,6 @@
         private System.Windows.Forms.TextBox txtpesquisa;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button btnbuscar;
+        private System.Windows.Forms.Button btnlimpacampos;
     }
 }
