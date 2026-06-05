@@ -169,5 +169,34 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
         }
 
         #endregion
+
+        #region BuscarFuncionarioPorNome
+        public DataTable buscarFuncionarioPorNome(string nome)
+        {
+            try
+            {
+                DataTable tabelafuncionario = new DataTable();
+                string sql = @"select * from tb_funcionarios
+                               where nome=@nome";
+
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+                executacmd.Parameters.AddWithValue("@nome", nome);
+
+                conexao.Open();
+                executacmd.ExecuteNonQuery();
+
+                MySqlDataAdapter da = new MySqlDataAdapter(executacmd);
+                da.Fill(tabelafuncionario);
+                conexao.Close();
+
+                return tabelafuncionario;
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro ao executar o comando sql: " + erro);
+                return null;
+            }
+        }
+        #endregion
     }
 }

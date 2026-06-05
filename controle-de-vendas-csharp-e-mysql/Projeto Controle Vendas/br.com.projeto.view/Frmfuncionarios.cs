@@ -114,5 +114,19 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
 
             tabelaFuncionario.DataSource = dao.listarFuncionarios();
         }
+
+        private void btnpesquisar_Click(object sender, EventArgs e)
+        {
+            string nome = txtpesquisa.Text;
+            FuncionarioDAO dao = new FuncionarioDAO();
+            
+            tabelaFuncionario.DataSource = dao.buscarFuncionarioPorNome(nome);
+
+            if (tabelaFuncionario.Rows.Count == 0 || txtpesquisa.Text == string.Empty)
+            {
+                MessageBox.Show("Funcionário não encontrado!");
+                tabelaFuncionario.DataSource = dao.listarFuncionarios();
+            }
+        }
     }
 }
