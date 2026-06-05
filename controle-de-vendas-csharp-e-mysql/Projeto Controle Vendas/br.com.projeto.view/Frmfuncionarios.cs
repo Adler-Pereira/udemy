@@ -128,5 +128,13 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
                 tabelaFuncionario.DataSource = dao.listarFuncionarios();
             }
         }
+
+        private void txtpesquisa_TextChanged(object sender, EventArgs e)
+        {
+            string nome = "%" + txtpesquisa.Text + "%";
+            FuncionarioDAO dao = new FuncionarioDAO();
+
+            tabelaFuncionario.DataSource = dao.listarFuncionarioPorNome(nome);
+        }
     }
 }
