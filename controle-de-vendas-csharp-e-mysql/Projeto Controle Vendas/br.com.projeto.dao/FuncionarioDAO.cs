@@ -24,7 +24,7 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
         {
             try
             {
-                string sql = @"insert into tb_clientes (nome,rg,cpf,email,senha,cargo,nivel_acesso,telefone,celular,cep,endereco,numero,complemento,bairro,cidade,estado)
+                string sql = @"insert into tb_funcionarios (nome,rg,cpf,email,senha,cargo,nivel_acesso,telefone,celular,cep,endereco,numero,complemento,bairro,cidade,estado)
                            values (@nome, @rg, @cpf, @email, @senha, @cargo, @nivel_acesso, @telefone, @celular, @cep, @endereco, @numero, @complemento, @bairro, @cidade, @estado)";
 
                 MySqlCommand executacmd = new MySqlCommand(sql, conexao);
