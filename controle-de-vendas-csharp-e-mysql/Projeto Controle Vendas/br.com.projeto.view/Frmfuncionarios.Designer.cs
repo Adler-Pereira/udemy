@@ -33,7 +33,7 @@
             this.btnexcluir = new System.Windows.Forms.Button();
             this.btnsalvar = new System.Windows.Forms.Button();
             this.btnnovo = new System.Windows.Forms.Button();
-            this.tabClientes = new System.Windows.Forms.TabControl();
+            this.tabFuncionarios = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.cbnivel = new System.Windows.Forms.ComboBox();
             this.txtsenha = new System.Windows.Forms.TextBox();
@@ -77,7 +77,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabClientes.SuspendLayout();
+            this.tabFuncionarios.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabelaFuncionario)).BeginInit();
@@ -107,6 +107,7 @@
             this.btneditar.TabIndex = 12;
             this.btneditar.Text = "Editar";
             this.btneditar.UseVisualStyleBackColor = false;
+            this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
             // 
             // btnexcluir
             // 
@@ -119,6 +120,7 @@
             this.btnexcluir.TabIndex = 11;
             this.btnexcluir.Text = "Excluir";
             this.btnexcluir.UseVisualStyleBackColor = false;
+            this.btnexcluir.Click += new System.EventHandler(this.btnexcluir_Click);
             // 
             // btnsalvar
             // 
@@ -145,16 +147,16 @@
             this.btnnovo.Text = "Novo";
             this.btnnovo.UseVisualStyleBackColor = false;
             // 
-            // tabClientes
+            // tabFuncionarios
             // 
-            this.tabClientes.Controls.Add(this.tabPage1);
-            this.tabClientes.Controls.Add(this.tabPage2);
-            this.tabClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabClientes.Location = new System.Drawing.Point(14, 107);
-            this.tabClientes.Name = "tabClientes";
-            this.tabClientes.SelectedIndex = 0;
-            this.tabClientes.Size = new System.Drawing.Size(818, 404);
-            this.tabClientes.TabIndex = 8;
+            this.tabFuncionarios.Controls.Add(this.tabPage1);
+            this.tabFuncionarios.Controls.Add(this.tabPage2);
+            this.tabFuncionarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabFuncionarios.Location = new System.Drawing.Point(14, 107);
+            this.tabFuncionarios.Name = "tabFuncionarios";
+            this.tabFuncionarios.SelectedIndex = 0;
+            this.tabFuncionarios.Size = new System.Drawing.Size(818, 404);
+            this.tabFuncionarios.TabIndex = 8;
             // 
             // tabPage1
             // 
@@ -571,6 +573,7 @@
             this.tabelaFuncionario.ReadOnly = true;
             this.tabelaFuncionario.Size = new System.Drawing.Size(775, 227);
             this.tabelaFuncionario.TabIndex = 7;
+            this.tabelaFuncionario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tabelaFuncionario_CellClick);
             // 
             // btnpesquisar
             // 
@@ -632,7 +635,7 @@
             this.Controls.Add(this.btnexcluir);
             this.Controls.Add(this.btnsalvar);
             this.Controls.Add(this.btnnovo);
-            this.Controls.Add(this.tabClientes);
+            this.Controls.Add(this.tabFuncionarios);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.Margin = new System.Windows.Forms.Padding(6);
@@ -640,7 +643,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Funcionários";
             this.Load += new System.EventHandler(this.Frmfuncionarios_Load);
-            this.tabClientes.ResumeLayout(false);
+            this.tabFuncionarios.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -659,7 +662,7 @@
         private System.Windows.Forms.Button btnexcluir;
         private System.Windows.Forms.Button btnsalvar;
         private System.Windows.Forms.Button btnnovo;
-        private System.Windows.Forms.TabControl tabClientes;
+        private System.Windows.Forms.TabControl tabFuncionarios;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button btnbuscar;
         private System.Windows.Forms.TextBox txtcomp;
