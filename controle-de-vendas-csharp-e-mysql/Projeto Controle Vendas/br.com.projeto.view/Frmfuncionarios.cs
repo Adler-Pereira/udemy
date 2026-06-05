@@ -136,5 +136,32 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
 
             tabelaFuncionario.DataSource = dao.listarFuncionarioPorNome(nome);
         }
+
+        private void btnlimpacampos_Click(object sender, EventArgs e)
+        {
+            new Helpers().LimparTela(this);
+        }
+
+        private void btnbuscar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string cep = txtcep.Text;
+                string xml = string.Format("https://viacep.com.br/ws/{0}/xml/", cep);
+
+                DataSet dados = new DataSet();
+                dados.ReadXml(xml);
+
+                cbuf.Text = dados.Tables[0].Rows[0]["uf"].ToString();
+                txtcidade.Text = dados.Tables[0].Rows[0]["localidade"].ToString();
+                txtbairro.Text = dados.Tables[0].Rows[0]["bairro"].ToString();
+                txtendereco.Text = dados.Tables[0].Rows[0]["logradouro"].ToString();
+                txtcomp.Text = dados.Tables[0].Rows[0]["complemento"].ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Localização não encontrada. Por favor, preencha os campos manualmente.");
+            }
+        }
     }
 }
