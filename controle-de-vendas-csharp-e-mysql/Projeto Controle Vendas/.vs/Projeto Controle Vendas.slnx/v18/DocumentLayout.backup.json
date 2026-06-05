@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.dao\\funcionariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.dao\\clientedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.dao\\clientedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\frmfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.view\\frmfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\frmfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.view\\frmfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.dao\\clientedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.dao\\clientedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.model\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Frmfuncionarios.cs",
               "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\Frmfuncionarios.cs",
               "RelativeDocumentMoniker": "br.com.projeto.view\\Frmfuncionarios.cs",
@@ -62,8 +62,7 @@
               "RelativeToolTip": "br.com.projeto.view\\Frmfuncionarios.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAqwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-05T11:57:13.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-05T11:57:13.006Z"
             },
             {
               "$type": "Document",
@@ -85,20 +84,20 @@
               "RelativeDocumentMoniker": "br.com.projeto.dao\\FuncionarioDAO.cs",
               "ToolTip": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.dao\\FuncionarioDAO.cs",
               "RelativeToolTip": "br.com.projeto.dao\\FuncionarioDAO.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAD4AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAiwJIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-05T11:24:17.619Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ClienteDAO.cs",
               "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.dao\\ClienteDAO.cs",
               "RelativeDocumentMoniker": "br.com.projeto.dao\\ClienteDAO.cs",
               "ToolTip": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.dao\\ClienteDAO.cs",
               "RelativeToolTip": "br.com.projeto.dao\\ClienteDAO.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAiwI0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T14:24:42.936Z",
               "EditorCaption": ""
@@ -129,15 +128,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Frmfuncionarios.cs [Design]",
               "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\Frmfuncionarios.cs",
               "RelativeDocumentMoniker": "br.com.projeto.view\\Frmfuncionarios.cs",
               "ToolTip": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\Frmfuncionarios.cs [Design]",
               "RelativeToolTip": "br.com.projeto.view\\Frmfuncionarios.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-03T14:06:26.555Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-06-03T14:06:26.555Z"
             },
             {
               "$type": "Document",
