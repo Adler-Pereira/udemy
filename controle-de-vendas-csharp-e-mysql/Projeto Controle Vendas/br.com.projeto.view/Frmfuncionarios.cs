@@ -43,5 +43,11 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
             FuncionarioDAO dao = new FuncionarioDAO();
             dao.cadastrarFuncionario(obj);
         }
+
+        private void Frmfuncionarios_Load(object sender, EventArgs e)
+        {
+            FuncionarioDAO dao = new FuncionarioDAO();
+            tabelaFuncionario.DataSource = dao.listarFuncionarios();
+        }
     }
 }

@@ -639,6 +639,7 @@
             this.Name = "Frmfuncionarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Funcionários";
+            this.Load += new System.EventHandler(this.Frmfuncionarios_Load);
             this.tabClientes.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

@@ -3,6 +3,7 @@ using Projeto_Controle_Vendas.br.com.projeto.conexao;
 using Projeto_Controle_Vendas.br.com.projeto.model;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -55,6 +56,33 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
             catch (Exception erro)
             {
                 MessageBox.Show("Aconteceu o erro: " + erro);
+            }
+        }
+        #endregion
+
+        #region ListarFuncionario
+        public DataTable listarFuncionarios()
+        {
+            try
+            {
+                DataTable tabelafuncionario = new DataTable();
+                string sql = "select * from tb_funcionarios";
+
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+
+                conexao.Open();
+                executacmd.ExecuteNonQuery();
+
+                MySqlDataAdapter da = new MySqlDataAdapter(executacmd);
+                da.Fill(tabelafuncionario);
+                conexao.Close();
+
+                return tabelafuncionario;
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro ao executar o comando sql: " + erro);
+                return null;
             }
         }
         #endregion
