@@ -466,7 +466,7 @@
             // txtcpf
             // 
             this.txtcpf.Location = new System.Drawing.Point(592, 119);
-            this.txtcpf.Mask = "###.###.###-##";
+            this.txtcpf.Mask = "###,###,###-##";
             this.txtcpf.Name = "txtcpf";
             this.txtcpf.Size = new System.Drawing.Size(180, 26);
             this.txtcpf.TabIndex = 9;
@@ -484,7 +484,7 @@
             // txtrg
             // 
             this.txtrg.Location = new System.Drawing.Point(592, 75);
-            this.txtrg.Mask = "##.###.###-#";
+            this.txtrg.Mask = "##,###,###-#";
             this.txtrg.Name = "txtrg";
             this.txtrg.Size = new System.Drawing.Size(180, 26);
             this.txtrg.TabIndex = 7;
