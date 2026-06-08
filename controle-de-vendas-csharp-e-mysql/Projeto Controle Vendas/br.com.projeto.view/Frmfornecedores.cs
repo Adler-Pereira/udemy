@@ -68,12 +68,83 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
             dao.CadastrarFornecedor(obj);
 
             tabelaFornecedor.DataSource = dao.ListarFornecedores();
+            new Helpers().LimparTela(this);
         }
 
         private void Frmfornecedores_Load(object sender, EventArgs e)
         {
             FornecedorDAO dao = new FornecedorDAO();
             tabelaFornecedor.DataSource = dao.ListarFornecedores();
+        }
+
+        private void btneditar_Click(object sender, EventArgs e)
+        {
+
+            Fornecedor obj = new Fornecedor();
+            FornecedorDAO dao = new FornecedorDAO();
+
+            obj.codigo = int.Parse(txtcodigo.Text);
+            obj.nome = txtnome.Text;
+            obj.cnpj = txtcnpj.Text;
+            obj.email = txtemail.Text;
+            obj.telefone = txttelefone.Text;
+            obj.celular = txtcelular.Text;
+            obj.cep = txtcep.Text;
+            obj.endereco = txtendereco.Text;
+            obj.numero = int.Parse(txtnumero.Text);
+            obj.complemento = txtcomp.Text;
+            obj.bairro = txtbairro.Text;
+            obj.cidade = txtcidade.Text;
+            obj.estado = cbuf.SelectedItem.ToString();
+
+            dao.AlterarFornecedor(obj);
+
+            tabelaFornecedor.DataSource = dao.ListarFornecedores();
+            new Helpers().LimparTela(this);
+        }
+
+        private void tabelaFornecedor_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtcodigo.Text = tabelaFornecedor.CurrentRow.Cells[0].Value.ToString();
+            txtnome.Text = tabelaFornecedor.CurrentRow.Cells[1].Value.ToString();
+            txtcnpj.Text = tabelaFornecedor.CurrentRow.Cells[2].Value.ToString();
+            txtemail.Text = tabelaFornecedor.CurrentRow.Cells[3].Value.ToString();
+            txttelefone.Text = tabelaFornecedor.CurrentRow.Cells[4].Value.ToString();
+            txtcelular.Text = tabelaFornecedor.CurrentRow.Cells[5].Value.ToString();
+            txtcep.Text = tabelaFornecedor.CurrentRow.Cells[6].Value.ToString();
+            txtendereco.Text = tabelaFornecedor.CurrentRow.Cells[7].Value.ToString();
+            txtnumero.Text = tabelaFornecedor.CurrentRow.Cells[8].Value.ToString();
+            txtcomp.Text = tabelaFornecedor.CurrentRow.Cells[9].Value.ToString();
+            txtbairro.Text = tabelaFornecedor.CurrentRow.Cells[10].Value.ToString();
+            txtcidade.Text = tabelaFornecedor.CurrentRow.Cells[11].Value.ToString();
+            cbuf.Text = tabelaFornecedor.CurrentRow.Cells[12].Value.ToString();
+
+            tabFornecedores.SelectedTab = tabPage1;
+        }
+
+        private void btnexcluir_Click(object sender, EventArgs e)
+        {
+            Fornecedor obj = new Fornecedor();
+            FornecedorDAO dao = new FornecedorDAO();
+
+            obj.codigo = int.Parse(txtcodigo.Text);
+            obj.nome = txtnome.Text;
+            obj.cnpj = txtcnpj.Text;
+            obj.email = txtemail.Text;
+            obj.telefone = txttelefone.Text;
+            obj.celular = txtcelular.Text;
+            obj.cep = txtcep.Text;
+            obj.endereco = txtendereco.Text;
+            obj.numero = int.Parse(txtnumero.Text);
+            obj.complemento = txtcomp.Text;
+            obj.bairro = txtbairro.Text;
+            obj.cidade = txtcidade.Text;
+            obj.estado = cbuf.SelectedItem.ToString();
+
+            dao.ExcluirFornecedor(obj);
+
+            tabelaFornecedor.DataSource = dao.ListarFornecedores();
+            new Helpers().LimparTela(this);
         }
     }
 }
