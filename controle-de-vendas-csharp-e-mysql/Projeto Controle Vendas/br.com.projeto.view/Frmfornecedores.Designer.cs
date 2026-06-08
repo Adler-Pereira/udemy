@@ -35,6 +35,7 @@
             this.btnnovo = new System.Windows.Forms.Button();
             this.tabFornecedores = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.txtcelular = new System.Windows.Forms.MaskedTextBox();
             this.btnbuscar = new System.Windows.Forms.Button();
             this.txtcomp = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -51,7 +52,6 @@
             this.txtcep = new System.Windows.Forms.MaskedTextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtcelular = new System.Windows.Forms.MaskedTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txttelefone = new System.Windows.Forms.MaskedTextBox();
             this.txtcnpj = new System.Windows.Forms.MaskedTextBox();
@@ -124,6 +124,7 @@
             this.btnsalvar.TabIndex = 17;
             this.btnsalvar.Text = "Salvar";
             this.btnsalvar.UseVisualStyleBackColor = false;
+            this.btnsalvar.Click += new System.EventHandler(this.btnsalvar_Click);
             // 
             // btnnovo
             // 
@@ -184,6 +185,14 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Dados Pessoais";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // txtcelular
+            // 
+            this.txtcelular.Location = new System.Drawing.Point(367, 164);
+            this.txtcelular.Mask = "(99) 0 0000-0000";
+            this.txtcelular.Name = "txtcelular";
+            this.txtcelular.Size = new System.Drawing.Size(164, 26);
+            this.txtcelular.TabIndex = 13;
             // 
             // btnbuscar
             // 
@@ -356,14 +365,6 @@
             this.label8.Size = new System.Drawing.Size(62, 20);
             this.label8.TabIndex = 14;
             this.label8.Text = "Celular:";
-            // 
-            // txtcelular
-            // 
-            this.txtcelular.Location = new System.Drawing.Point(367, 164);
-            this.txtcelular.Mask = "(99) 0 0000-0000";
-            this.txtcelular.Name = "txtcelular";
-            this.txtcelular.Size = new System.Drawing.Size(164, 26);
-            this.txtcelular.TabIndex = 13;
             // 
             // label7
             // 
