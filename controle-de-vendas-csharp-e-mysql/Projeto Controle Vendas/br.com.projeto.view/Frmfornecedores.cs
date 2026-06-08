@@ -65,16 +65,16 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
             obj.cidade = txtcidade.Text;
             obj.estado = cbuf.SelectedItem.ToString();
 
-            dao.CadastrarFornecedor(obj);
+            dao.cadastrarFornecedor(obj);
 
-            tabelaFornecedor.DataSource = dao.ListarFornecedores();
+            tabelaFornecedor.DataSource = dao.listarFornecedores();
             new Helpers().LimparTela(this);
         }
 
         private void Frmfornecedores_Load(object sender, EventArgs e)
         {
             FornecedorDAO dao = new FornecedorDAO();
-            tabelaFornecedor.DataSource = dao.ListarFornecedores();
+            tabelaFornecedor.DataSource = dao.listarFornecedores();
         }
 
         private void btneditar_Click(object sender, EventArgs e)
@@ -97,9 +97,9 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
             obj.cidade = txtcidade.Text;
             obj.estado = cbuf.SelectedItem.ToString();
 
-            dao.AlterarFornecedor(obj);
+            dao.alterarFornecedor(obj);
 
-            tabelaFornecedor.DataSource = dao.ListarFornecedores();
+            tabelaFornecedor.DataSource = dao.listarFornecedores();
             new Helpers().LimparTela(this);
         }
 
@@ -141,10 +141,32 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
             obj.cidade = txtcidade.Text;
             obj.estado = cbuf.SelectedItem.ToString();
 
-            dao.ExcluirFornecedor(obj);
+            dao.excluirFornecedor(obj);
 
-            tabelaFornecedor.DataSource = dao.ListarFornecedores();
+            tabelaFornecedor.DataSource = dao.listarFornecedores();
             new Helpers().LimparTela(this);
+        }
+
+        private void btnpesquisar_Click(object sender, EventArgs e)
+        {
+            string nome = txtpesquisa.Text;
+            FornecedorDAO dao = new FornecedorDAO();
+
+            tabelaFornecedor.DataSource = dao.buscarFornecedorPorNome(nome);
+
+            if (tabelaFornecedor.Rows.Count == 0 || txtpesquisa.Text == string.Empty)
+            {
+                MessageBox.Show("Fornecedor não encontrado!");
+                tabelaFornecedor.DataSource = dao.listarFornecedores();
+            }
+        }
+
+        private void txtpesquisa_TextChanged(object sender, EventArgs e)
+        {
+            string nome = "%" + txtpesquisa.Text + "%";
+            FornecedorDAO dao = new FornecedorDAO();
+
+            tabelaFornecedor.DataSource = dao.listarFornecedorPorNome(nome);
         }
     }
 }

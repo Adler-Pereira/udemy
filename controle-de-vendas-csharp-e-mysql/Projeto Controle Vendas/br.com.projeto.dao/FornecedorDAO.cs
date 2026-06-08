@@ -21,7 +21,7 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
         }
 
         #region CadastrarFornecedor
-        public void CadastrarFornecedor(Fornecedor obj)
+        public void cadastrarFornecedor(Fornecedor obj)
         {
             try
             {
@@ -57,7 +57,7 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
         #endregion
 
         #region ListarFornecedores
-        public DataTable ListarFornecedores() {
+        public DataTable listarFornecedores() {
             try
             {
                 string sql = "SELECT * FROM tb_fornecedores";
@@ -84,7 +84,7 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
         #endregion
 
         #region AlterarFornecedor
-        public void AlterarFornecedor(Fornecedor obj)
+        public void alterarFornecedor(Fornecedor obj)
         {
             try
             {
@@ -132,7 +132,7 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
         #endregion
 
         #region ExcluirFornecedor
-        public void ExcluirFornecedor(Fornecedor obj)
+        public void excluirFornecedor(Fornecedor obj)
         {
             try
             {
@@ -151,6 +151,66 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
             catch (Exception erro)
             {
                 MessageBox.Show("Erro ao executar o comando sql: " + erro);
+            }
+        }
+        #endregion
+
+        #region BuscarFornecedorPorNome
+        public DataTable buscarFornecedorPorNome(string nome)
+        {
+            try
+            {
+                string sql = @"SELECT * FROM tb_fornecedores
+                               WHERE nome=@nome";
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+                DataTable tabelaFornecedor = new DataTable();
+
+                executacmd.Parameters.AddWithValue("@nome", nome);
+                conexao.Open();
+
+                executacmd.ExecuteNonQuery();
+
+                MySqlDataAdapter da = new MySqlDataAdapter(executacmd);
+                da.Fill(tabelaFornecedor);
+
+                conexao.Close();
+
+                return tabelaFornecedor;
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro ao executar o comando sql: " + erro);
+                return null;
+            }
+        }
+        #endregion
+
+        #region ListarFornecedorPorNome
+        public DataTable listarFornecedorPorNome(string nome)
+        {
+            try
+            {
+                string sql = @"SELECT * FROM tb_fornecedores
+                               WHERE nome LIKE @nome";
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+                DataTable tabelaFornecedor = new DataTable();
+
+                executacmd.Parameters.AddWithValue("@nome", nome);
+                conexao.Open();
+
+                executacmd.ExecuteNonQuery();
+
+                MySqlDataAdapter da = new MySqlDataAdapter(executacmd);
+                da.Fill(tabelaFornecedor);
+
+                conexao.Close();
+
+                return tabelaFornecedor;
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro ao executar o comando sql: " + erro);
+                return null;
             }
         }
         #endregion
