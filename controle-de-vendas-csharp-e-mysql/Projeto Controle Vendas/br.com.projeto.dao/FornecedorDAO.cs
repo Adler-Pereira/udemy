@@ -3,6 +3,7 @@ using Projeto_Controle_Vendas.br.com.projeto.conexao;
 using Projeto_Controle_Vendas.br.com.projeto.model;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -51,6 +52,33 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
             catch (Exception erro)
             {
                 MessageBox.Show("Aconteceu o erro: " + erro);
+            }
+        }
+        #endregion
+
+        #region ListarFornecedores
+        public DataTable ListarFornecedores() {
+            try
+            {
+                string sql = "SELECT * FROM tb_fornecedores";
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+                DataTable tabelaFornecedor = new DataTable();
+
+                conexao.Open();
+
+                executacmd.ExecuteNonQuery();
+
+                MySqlDataAdapter da = new MySqlDataAdapter(executacmd);
+                da.Fill(tabelaFornecedor); 
+
+                conexao.Close();
+
+                return tabelaFornecedor;
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro ao executar o comando sql: " + erro);
+                return null;
             }
         }
         #endregion

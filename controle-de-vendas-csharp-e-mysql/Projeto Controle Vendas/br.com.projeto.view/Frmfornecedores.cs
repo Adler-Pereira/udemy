@@ -66,6 +66,14 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
             obj.estado = cbuf.SelectedItem.ToString();
 
             dao.CadastrarFornecedor(obj);
+
+            tabelaFornecedor.DataSource = dao.ListarFornecedores();
+        }
+
+        private void Frmfornecedores_Load(object sender, EventArgs e)
+        {
+            FornecedorDAO dao = new FornecedorDAO();
+            tabelaFornecedor.DataSource = dao.ListarFornecedores();
         }
     }
 }

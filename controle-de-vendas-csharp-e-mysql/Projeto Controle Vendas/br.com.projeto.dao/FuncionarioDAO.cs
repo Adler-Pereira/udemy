@@ -60,7 +60,7 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
         }
         #endregion
 
-        #region ListarFuncionario
+        #region ListarFuncionarios
         public DataTable listarFuncionarios()
         {
             try

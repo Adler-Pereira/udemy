@@ -544,6 +544,7 @@
             this.Name = "Frmfornecedores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Fornecedores";
+            this.Load += new System.EventHandler(this.Frmfornecedores_Load);
             this.tabFornecedores.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
