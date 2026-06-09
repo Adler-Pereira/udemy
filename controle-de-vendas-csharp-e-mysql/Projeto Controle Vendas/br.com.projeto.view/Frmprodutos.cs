@@ -33,14 +33,15 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
         private void btnsalvar_Click(object sender, EventArgs e)
         {
             Produto obj = new Produto();
-            ProdutoDAO f_dao = new ProdutoDAO();
+            ProdutoDAO p_dao = new ProdutoDAO();
 
             obj.descricao = txtdescricao.Text;
             obj.preco = Convert.ToDecimal(txtpreco.Text);
             obj.qtdestoque = Convert.ToInt32(txtqtdestoque.Value);
             obj.for_id = Convert.ToInt32(cbfornecedor.SelectedValue);
 
-            f_dao.cadastrarProduto(obj);
+            p_dao.cadastrarProduto(obj);
+            tabelaProduto.DataSource = p_dao.listarProdutos();
 
             new Helpers().LimparTela(this);
         }

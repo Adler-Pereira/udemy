@@ -79,5 +79,60 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
             }
         }
         #endregion
+
+        #region AlterarProduto
+        public void alterarProduto(Produto obj)
+        {
+            try
+            {
+                string sql = @"UPDATE tb_produtos SET descricao=@descricao,
+                                                      preco=@preco,
+                                                      qtd_estoque=@qtdestoque,
+                                                      for_id=@for_id
+                               WHERE id=@id";
+
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+
+                executacmd.Parameters.AddWithValue("@id", obj.id);
+                executacmd.Parameters.AddWithValue("@descricao", obj.descricao);
+                executacmd.Parameters.AddWithValue("@preco", obj.preco);
+                executacmd.Parameters.AddWithValue("@qtdestoque", obj.qtdestoque);
+                executacmd.Parameters.AddWithValue("@for_id", obj.for_id);
+
+                conexao.Open();
+                executacmd.ExecuteNonQuery();
+                MessageBox.Show("Produto alterado com sucesso!");
+                conexao.Close();
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro ao executar o comando sql: " + erro);
+            }
+        }
+        #endregion
+
+        #region ExcluirProduto
+        public void excluirProduto(Produto obj)
+        {
+            try
+            {
+                string sql = @"DELETE FROM tb_produtos
+                               WHERE id=@id";
+
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+
+                executacmd.Parameters.AddWithValue("@id", obj.id);
+
+                conexao.Open();
+                executacmd.ExecuteNonQuery();
+                MessageBox.Show("Produto excluído com sucesso!");
+                conexao.Close();
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro ao executar o comando sql: " + erro);
+            }
+        }
+        #endregion
     }
 }
