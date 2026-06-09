@@ -3,6 +3,7 @@ using Projeto_Controle_Vendas.br.com.projeto.conexao;
 using Projeto_Controle_Vendas.br.com.projeto.model;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,6 +43,39 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
             catch (Exception erro)
             {
                 MessageBox.Show("Erro ao executar o comando sql: " + erro);
+            }
+        }
+        #endregion
+
+        #region ListarProdutos
+        public DataTable listarProdutos()
+        {
+            try
+            {
+                DataTable tabelaProduto = new DataTable();
+                string sql = @"SELECT
+	                               p.id AS 'Código',
+	                               p.descricao AS 'Descrição',
+                                   p.preco AS 'Preço',
+                                   p.qtd_estoque AS 'Qtd Estoque',
+                                   f.nome AS 'Fornecedor'
+                               FROM tb_produtos p JOIN tb_fornecedores f ON (p.for_id = f.id);";
+
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+
+                conexao.Open();
+                executacmd.ExecuteNonQuery();
+
+                MySqlDataAdapter da = new MySqlDataAdapter(executacmd);
+                da.Fill(tabelaProduto);
+                conexao.Close();
+
+                return tabelaProduto;
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro ao executar o comando sql: " + erro);
+                return null;
             }
         }
         #endregion

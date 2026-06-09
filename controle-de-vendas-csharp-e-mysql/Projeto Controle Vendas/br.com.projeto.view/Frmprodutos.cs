@@ -25,6 +25,9 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
             cbfornecedor.DataSource = f_dao.listarFornecedores();
             cbfornecedor.DisplayMember = "nome";
             cbfornecedor.ValueMember = "id";
+
+            ProdutoDAO p_dao = new ProdutoDAO();
+            tabelaProduto.DataSource = p_dao.listarProdutos();
         }
 
         private void btnsalvar_Click(object sender, EventArgs e)
