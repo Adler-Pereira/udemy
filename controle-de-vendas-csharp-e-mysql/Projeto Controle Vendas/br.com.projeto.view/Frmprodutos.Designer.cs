@@ -72,6 +72,7 @@
             this.btnlimpacampos.TabIndex = 13;
             this.btnlimpacampos.Text = "Limpar Campos";
             this.btnlimpacampos.UseVisualStyleBackColor = false;
+            this.btnlimpacampos.Click += new System.EventHandler(this.btnlimpacampos_Click);
             // 
             // btneditar
             // 
