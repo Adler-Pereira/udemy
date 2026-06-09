@@ -105,6 +105,7 @@
     <Compile Include="br.com.projeto.model\Fornecedor.cs" />
     <Compile Include="br.com.projeto.model\Funcionario.cs" />
     <Compile Include="br.com.projeto.model\Helpers.cs" />
+    <Compile Include="br.com.projeto.model\Produto.cs" />
     <Compile Include="br.com.projeto.view\Frmclientes.cs">
       <SubType>Form</SubType>
     </Compile>
