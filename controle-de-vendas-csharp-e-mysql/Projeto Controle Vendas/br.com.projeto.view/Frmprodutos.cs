@@ -49,5 +49,16 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
         {
             new Helpers().LimparTela(this);
         }
+
+        private void tabelaProduto_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtcodigo.Text = tabelaProduto.CurrentRow.Cells[0].Value.ToString();
+            txtdescricao.Text = tabelaProduto.CurrentRow.Cells[1].Value.ToString();
+            txtpreco.Value = Convert.ToDecimal(tabelaProduto.CurrentRow.Cells[2].Value.ToString());
+            txtqtdestoque.Value = Convert.ToInt32(tabelaProduto.CurrentRow.Cells[3].Value.ToString());
+            cbfornecedor.Text = tabelaProduto.CurrentRow.Cells[4].Value.ToString();
+
+            tabProdutos.SelectedTab = tabPage1;
+        }
     }
 }

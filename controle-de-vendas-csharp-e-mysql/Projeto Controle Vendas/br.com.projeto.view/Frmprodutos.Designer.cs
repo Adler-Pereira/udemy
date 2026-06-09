@@ -168,6 +168,7 @@
             this.tabelaProduto.ReadOnly = true;
             this.tabelaProduto.Size = new System.Drawing.Size(775, 227);
             this.tabelaProduto.TabIndex = 7;
+            this.tabelaProduto.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tabelaProduto_CellClick);
             // 
             // btnpesquisar
             // 
