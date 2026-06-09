@@ -1,4 +1,5 @@
 ﻿using Projeto_Controle_Vendas.br.com.projeto.dao;
+using Projeto_Controle_Vendas.br.com.projeto.model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,6 +25,10 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
             cbfornecedor.DataSource = f_dao.listarFornecedores();
             cbfornecedor.DisplayMember = "nome";
             cbfornecedor.ValueMember = "id";
+        }
+
+        private void btnsalvar_Click(object sender, EventArgs e)
+        {
         }
     }
 }

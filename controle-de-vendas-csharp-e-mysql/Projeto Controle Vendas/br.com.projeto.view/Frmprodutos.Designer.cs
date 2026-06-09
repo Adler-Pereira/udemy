@@ -36,29 +36,29 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label16 = new System.Windows.Forms.Label();
-            this.txtpesquisa = new System.Windows.Forms.TextBox();
-            this.btnpesquisar = new System.Windows.Forms.Button();
             this.tabelaProduto = new System.Windows.Forms.DataGridView();
+            this.btnpesquisar = new System.Windows.Forms.Button();
+            this.txtpesquisa = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.tabProdutos = new System.Windows.Forms.TabControl();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtcodigo = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.cbfornecedor = new System.Windows.Forms.ComboBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtqtdestoque = new System.Windows.Forms.NumericUpDown();
+            this.txtdescricao = new System.Windows.Forms.TextBox();
             this.txtpreco = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtdescricao = new System.Windows.Forms.TextBox();
+            this.txtqtdestoque = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cbfornecedor = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtcodigo = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabelaProduto)).BeginInit();
             this.tabProdutos.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtqtdestoque)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtpreco)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtqtdestoque)).BeginInit();
             this.SuspendLayout();
             // 
             // btnlimpacampos
@@ -108,6 +108,7 @@
             this.btnsalvar.TabIndex = 10;
             this.btnsalvar.Text = "Salvar";
             this.btnsalvar.UseVisualStyleBackColor = false;
+            this.btnsalvar.Click += new System.EventHandler(this.btnsalvar_Click);
             // 
             // btnnovo
             // 
@@ -156,22 +157,16 @@
             this.tabPage2.Text = "Consulta";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // label16
+            // tabelaProduto
             // 
-            this.label16.AutoSize = true;
-            this.label16.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label16.Location = new System.Drawing.Point(12, 45);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(55, 20);
-            this.label16.TabIndex = 4;
-            this.label16.Text = "Nome:";
-            // 
-            // txtpesquisa
-            // 
-            this.txtpesquisa.Location = new System.Drawing.Point(92, 42);
-            this.txtpesquisa.Name = "txtpesquisa";
-            this.txtpesquisa.Size = new System.Drawing.Size(246, 26);
-            this.txtpesquisa.TabIndex = 5;
+            this.tabelaProduto.AllowUserToAddRows = false;
+            this.tabelaProduto.AllowUserToDeleteRows = false;
+            this.tabelaProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tabelaProduto.Location = new System.Drawing.Point(16, 87);
+            this.tabelaProduto.Name = "tabelaProduto";
+            this.tabelaProduto.ReadOnly = true;
+            this.tabelaProduto.Size = new System.Drawing.Size(775, 227);
+            this.tabelaProduto.TabIndex = 7;
             // 
             // btnpesquisar
             // 
@@ -185,16 +180,22 @@
             this.btnpesquisar.Text = "Pesquisar";
             this.btnpesquisar.UseVisualStyleBackColor = false;
             // 
-            // tabelaProduto
+            // txtpesquisa
             // 
-            this.tabelaProduto.AllowUserToAddRows = false;
-            this.tabelaProduto.AllowUserToDeleteRows = false;
-            this.tabelaProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tabelaProduto.Location = new System.Drawing.Point(16, 87);
-            this.tabelaProduto.Name = "tabelaProduto";
-            this.tabelaProduto.ReadOnly = true;
-            this.tabelaProduto.Size = new System.Drawing.Size(775, 227);
-            this.tabelaProduto.TabIndex = 7;
+            this.txtpesquisa.Location = new System.Drawing.Point(92, 42);
+            this.txtpesquisa.Name = "txtpesquisa";
+            this.txtpesquisa.Size = new System.Drawing.Size(246, 26);
+            this.txtpesquisa.TabIndex = 5;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label16.Location = new System.Drawing.Point(12, 45);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(55, 20);
+            this.label16.TabIndex = 4;
+            this.label16.Text = "Nome:";
             // 
             // tabProdutos
             // 
@@ -207,43 +208,78 @@
             this.tabProdutos.Size = new System.Drawing.Size(818, 353);
             this.tabProdutos.TabIndex = 8;
             // 
-            // label2
+            // tabPage1
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(44, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Código:";
+            this.tabPage1.Controls.Add(this.txtdescricao);
+            this.tabPage1.Controls.Add(this.txtpreco);
+            this.tabPage1.Controls.Add(this.label5);
+            this.tabPage1.Controls.Add(this.txtqtdestoque);
+            this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Controls.Add(this.cbfornecedor);
+            this.tabPage1.Controls.Add(this.label12);
+            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.txtcodigo);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(810, 320);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Dados Pessoais";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // txtcodigo
+            // txtdescricao
             // 
-            this.txtcodigo.Enabled = false;
-            this.txtcodigo.Location = new System.Drawing.Point(106, 31);
-            this.txtcodigo.Name = "txtcodigo";
-            this.txtcodigo.Size = new System.Drawing.Size(93, 26);
-            this.txtcodigo.TabIndex = 1;
+            this.txtdescricao.Location = new System.Drawing.Point(106, 75);
+            this.txtdescricao.Name = "txtdescricao";
+            this.txtdescricao.Size = new System.Drawing.Size(666, 26);
+            this.txtdescricao.TabIndex = 27;
             // 
-            // label3
+            // txtpreco
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Location = new System.Drawing.Point(23, 78);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Descrição:";
+            this.txtpreco.DecimalPlaces = 2;
+            this.txtpreco.Location = new System.Drawing.Point(317, 123);
+            this.txtpreco.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.txtpreco.Name = "txtpreco";
+            this.txtpreco.Size = new System.Drawing.Size(144, 26);
+            this.txtpreco.TabIndex = 26;
+            this.txtpreco.ThousandsSeparator = true;
             // 
-            // label12
+            // label5
             // 
-            this.label12.AutoSize = true;
-            this.label12.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label12.Location = new System.Drawing.Point(490, 124);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(95, 20);
-            this.label12.TabIndex = 21;
-            this.label12.Text = "Fornecedor:";
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label5.Location = new System.Drawing.Point(228, 125);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(89, 20);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "Preço (R$):";
+            // 
+            // txtqtdestoque
+            // 
+            this.txtqtdestoque.Location = new System.Drawing.Point(106, 123);
+            this.txtqtdestoque.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.txtqtdestoque.Name = "txtqtdestoque";
+            this.txtqtdestoque.Size = new System.Drawing.Size(93, 26);
+            this.txtqtdestoque.TabIndex = 24;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label4.Location = new System.Drawing.Point(4, 125);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(103, 20);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Qtd Estoque:";
             // 
             // cbfornecedor
             // 
@@ -281,78 +317,43 @@
             this.cbfornecedor.Size = new System.Drawing.Size(189, 28);
             this.cbfornecedor.TabIndex = 22;
             // 
-            // tabPage1
+            // label12
             // 
-            this.tabPage1.Controls.Add(this.txtdescricao);
-            this.tabPage1.Controls.Add(this.txtpreco);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.txtqtdestoque);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.cbfornecedor);
-            this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.txtcodigo);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 29);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(810, 320);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Dados Pessoais";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.label12.AutoSize = true;
+            this.label12.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label12.Location = new System.Drawing.Point(490, 124);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(95, 20);
+            this.label12.TabIndex = 21;
+            this.label12.Text = "Fornecedor:";
             // 
-            // label4
+            // label3
             // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label4.Location = new System.Drawing.Point(4, 125);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 20);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "Qtd Estoque:";
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label3.Location = new System.Drawing.Point(23, 78);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Descrição:";
             // 
-            // txtqtdestoque
+            // txtcodigo
             // 
-            this.txtqtdestoque.Location = new System.Drawing.Point(106, 123);
-            this.txtqtdestoque.Maximum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            0});
-            this.txtqtdestoque.Name = "txtqtdestoque";
-            this.txtqtdestoque.Size = new System.Drawing.Size(93, 26);
-            this.txtqtdestoque.TabIndex = 24;
+            this.txtcodigo.Enabled = false;
+            this.txtcodigo.Location = new System.Drawing.Point(106, 31);
+            this.txtcodigo.Name = "txtcodigo";
+            this.txtcodigo.Size = new System.Drawing.Size(93, 26);
+            this.txtcodigo.TabIndex = 1;
             // 
-            // txtpreco
+            // label2
             // 
-            this.txtpreco.DecimalPlaces = 2;
-            this.txtpreco.Location = new System.Drawing.Point(317, 123);
-            this.txtpreco.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.txtpreco.Name = "txtpreco";
-            this.txtpreco.Size = new System.Drawing.Size(144, 26);
-            this.txtpreco.TabIndex = 26;
-            this.txtpreco.ThousandsSeparator = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label5.Location = new System.Drawing.Point(228, 125);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 20);
-            this.label5.TabIndex = 25;
-            this.label5.Text = "Preço (R$):";
-            // 
-            // txtdescricao
-            // 
-            this.txtdescricao.Location = new System.Drawing.Point(106, 75);
-            this.txtdescricao.Name = "txtdescricao";
-            this.txtdescricao.Size = new System.Drawing.Size(666, 26);
-            this.txtdescricao.TabIndex = 27;
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label2.Location = new System.Drawing.Point(44, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 20);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Código:";
             // 
             // Frmprodutos
             // 
@@ -377,8 +378,8 @@
             this.tabProdutos.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtqtdestoque)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtpreco)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtqtdestoque)).EndInit();
             this.ResumeLayout(false);
 
         }
