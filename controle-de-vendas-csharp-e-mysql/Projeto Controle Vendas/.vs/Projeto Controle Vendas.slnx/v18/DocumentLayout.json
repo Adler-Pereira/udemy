@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|c:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\projeto controle vendas\\br.com.projeto.view\\frmprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.view\\frmprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\frmprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.view\\frmprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.model\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.model\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.dao\\produtodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.dao\\produtodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,18 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\frmfornecedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.view\\frmfornecedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\frmprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.view\\frmprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|c:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\projeto controle vendas\\br.com.projeto.model\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.model\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\frmprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.view\\frmprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.dao\\fornecedordao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Produto.cs",
               "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.model\\Produto.cs",
               "RelativeDocumentMoniker": "br.com.projeto.model\\Produto.cs",
@@ -94,49 +94,46 @@
               "RelativeToolTip": "br.com.projeto.model\\Produto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-09T13:47:25.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-09T13:47:25.185Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Frmprodutos.cs",
               "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\Frmprodutos.cs",
               "RelativeDocumentMoniker": "br.com.projeto.view\\Frmprodutos.cs",
               "ToolTip": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\Frmprodutos.cs",
               "RelativeToolTip": "br.com.projeto.view\\Frmprodutos.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAYwCsAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAADwvy0AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-09T13:08:56.881Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Frmprodutos.cs [Design]",
               "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\Frmprodutos.cs",
               "RelativeDocumentMoniker": "br.com.projeto.view\\Frmprodutos.cs",
               "ToolTip": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\Frmprodutos.cs [Design]",
               "RelativeToolTip": "br.com.projeto.view\\Frmprodutos.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T15:20:47.944Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-06-08T15:20:47.944Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Frmfornecedores.cs [Design]",
               "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\Frmfornecedores.cs",
               "RelativeDocumentMoniker": "br.com.projeto.view\\Frmfornecedores.cs",
               "ToolTip": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\Frmfornecedores.cs [Design]",
               "RelativeToolTip": "br.com.projeto.view\\Frmfornecedores.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T11:32:52.253Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-06-08T11:32:52.253Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Frmfornecedores.cs",
               "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\Frmfornecedores.cs",
               "RelativeDocumentMoniker": "br.com.projeto.view\\Frmfornecedores.cs",
@@ -144,21 +141,19 @@
               "RelativeToolTip": "br.com.projeto.view\\Frmfornecedores.cs",
               "ViewState": "AgIAAFoAAAAAAAAAAADgv2sAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T12:01:09.705Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-08T12:01:09.705Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ProdutoDAO.cs",
               "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.dao\\ProdutoDAO.cs",
               "RelativeDocumentMoniker": "br.com.projeto.dao\\ProdutoDAO.cs",
               "ToolTip": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.dao\\ProdutoDAO.cs",
               "RelativeToolTip": "br.com.projeto.dao\\ProdutoDAO.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAiwGEAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAAGEAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-09T14:44:10.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-09T14:44:10.577Z"
             },
             {
               "$type": "Document",
@@ -170,8 +165,7 @@
               "RelativeToolTip": "br.com.projeto.dao\\FornecedorDAO.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAIUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T12:29:35.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-08T12:29:35.282Z"
             },
             {
               "$type": "Document",

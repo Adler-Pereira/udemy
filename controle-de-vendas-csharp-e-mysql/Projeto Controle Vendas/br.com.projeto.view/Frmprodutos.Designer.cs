@@ -85,6 +85,7 @@
             this.btneditar.TabIndex = 12;
             this.btneditar.Text = "Editar";
             this.btneditar.UseVisualStyleBackColor = false;
+            this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
             // 
             // btnexcluir
             // 
@@ -97,6 +98,7 @@
             this.btnexcluir.TabIndex = 11;
             this.btnexcluir.Text = "Excluir";
             this.btnexcluir.UseVisualStyleBackColor = false;
+            this.btnexcluir.Click += new System.EventHandler(this.btnexcluir_Click);
             // 
             // btnsalvar
             // 
