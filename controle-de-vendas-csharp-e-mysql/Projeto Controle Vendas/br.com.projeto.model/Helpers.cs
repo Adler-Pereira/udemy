@@ -27,6 +27,10 @@ namespace Projeto_Controle_Vendas.br.com.projeto.model
                             {
                                 (ctr2 as MaskedTextBox).Text = string.Empty;
                             }
+                            if (ctr2 is NumericUpDown)
+                            {
+                                (ctr2 as NumericUpDown).Value = 0;
+                            }
                         }
                     }
                 }
