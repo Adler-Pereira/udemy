@@ -134,5 +134,77 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
             }
         }
         #endregion
+
+        #region ListarProdutosPorNome
+        public DataTable listarProdutosPorNome(string descricao)
+        {
+            try
+            {
+                DataTable tabelaProduto = new DataTable();
+                string sql = @"SELECT
+	                               p.id AS 'Código',
+	                               p.descricao AS 'Descrição',
+                                   p.preco AS 'Preço',
+                                   p.qtd_estoque AS 'Qtd Estoque',
+                                   f.nome AS 'Fornecedor'
+                               FROM tb_produtos p JOIN tb_fornecedores f ON (p.for_id = f.id)
+                               WHERE p.descricao like @descricao;";
+
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+
+                executacmd.Parameters.AddWithValue("@descricao", descricao);
+
+                conexao.Open();
+                executacmd.ExecuteNonQuery();
+
+                MySqlDataAdapter da = new MySqlDataAdapter(executacmd);
+                da.Fill(tabelaProduto);
+                conexao.Close();
+
+                return tabelaProduto;
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro ao executar o comando sql: " + erro);
+                return null;
+            }
+        }
+        #endregion
+
+        #region BuscarProdutosPorNome
+        public DataTable buscarProdutosPorNome(string descricao)
+        {
+            try
+            {
+                DataTable tabelaProduto = new DataTable();
+                string sql = @"SELECT
+	                               p.id AS 'Código',
+	                               p.descricao AS 'Descrição',
+                                   p.preco AS 'Preço',
+                                   p.qtd_estoque AS 'Qtd Estoque',
+                                   f.nome AS 'Fornecedor'
+                               FROM tb_produtos p JOIN tb_fornecedores f ON (p.for_id = f.id)
+                               WHERE p.descricao = @descricao;";
+
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+
+                executacmd.Parameters.AddWithValue("@descricao", descricao);
+
+                conexao.Open();
+                executacmd.ExecuteNonQuery();
+
+                MySqlDataAdapter da = new MySqlDataAdapter(executacmd);
+                da.Fill(tabelaProduto);
+                conexao.Close();
+
+                return tabelaProduto;
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro ao executar o comando sql: " + erro);
+                return null;
+            }
+        }
+        #endregion
     }
 }

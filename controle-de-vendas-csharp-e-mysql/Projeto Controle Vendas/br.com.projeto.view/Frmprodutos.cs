@@ -92,5 +92,25 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
             new Helpers().LimparTela(this);
             tabelaProduto.DataSource = p_dao.listarProdutos();
         }
+
+        private void txtpesquisa_TextChanged(object sender, EventArgs e)
+        {
+            ProdutoDAO p_dao = new ProdutoDAO();
+            string descricao = "%" + txtpesquisa.Text + "%";
+            tabelaProduto.DataSource = p_dao.listarProdutosPorNome(descricao);
+        }
+
+        private void btnpesquisar_Click(object sender, EventArgs e)
+        {
+            ProdutoDAO p_dao = new ProdutoDAO();
+            string descricao = txtpesquisa.Text;
+            tabelaProduto.DataSource = p_dao.buscarProdutosPorNome(descricao);
+
+            if (tabelaProduto.Rows.Count == 0)
+            {
+                MessageBox.Show("Produto não encontrado!");
+                tabelaProduto.DataSource = p_dao.listarProdutos();
+            }
+        }
     }
 }
