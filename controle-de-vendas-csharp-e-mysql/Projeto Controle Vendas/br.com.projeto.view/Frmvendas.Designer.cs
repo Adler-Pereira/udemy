@@ -200,6 +200,7 @@
             this.btnadd.TabIndex = 36;
             this.btnadd.Text = "Adicionar Item";
             this.btnadd.UseVisualStyleBackColor = false;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
             // 
             // txtdescricao
             // 

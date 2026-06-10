@@ -60,6 +60,26 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
             }
         }
 
+        private void btnadd_Click(object sender, EventArgs e)
+        {
+            qtd = int.Parse(txtqtd.Text);
+            preco = txtpreco.Value;
+
+            subtotal = qtd * preco;
+
+            total += subtotal;
+
+            carrinho.Rows.Add(int.Parse(txtcodigo.Text), txtdescricao.Text, qtd, preco, subtotal);
+            txttotal.Value = total;
+
+            txtcodigo.Clear();
+            txtdescricao.Clear();
+            txtqtd.Value = 0;
+            txtpreco.Value = 0;
+
+            txtcodigo.Focus();
+        }
+
         private void Frmvendas_Load(object sender, EventArgs e)
         {
 
