@@ -206,5 +206,45 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
             }
         }
         #endregion
+
+        #region RetornaProdutoPorCodigo
+        public Produto retornaProdutoPorCodigo(int id)
+        {
+            try
+            {
+                Produto produto = new Produto();
+                string sql = @"SELECT * FROM tb_produtos WHERE id=@id";
+
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+
+                executacmd.Parameters.AddWithValue("@id", id);
+
+                conexao.Open();
+                MySqlDataReader rs = executacmd.ExecuteReader();
+
+                if (rs.Read())
+                {
+                    produto.id = rs.GetInt32("id");
+                    produto.descricao = rs.GetString("descricao");
+                    produto.preco = rs.GetDecimal("preco");
+
+                    conexao.Close();
+                    return produto;
+                }
+                else
+                {
+                    MessageBox.Show("Nenhum produto encontrado com esse código!");
+
+                    conexao.Close();
+                    return null;
+                }
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Aconteceu o erro: " + erro);
+                return null;
+            }
+        }
+        #endregion
     }
 }
