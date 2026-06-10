@@ -16,6 +16,8 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
     {
         Cliente cliente = new Cliente();
         ClienteDAO cdao = new ClienteDAO();
+        Produto produto = new Produto();
+        ProdutoDAO pdao = new ProdutoDAO();
 
         public Frmvendas()
         {
@@ -29,6 +31,17 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
                 cliente = cdao.retornaClientePorCpf(txtcpf.Text);
 
                 txtnome.Text = cliente.nome;
+            }
+        }
+
+        private void txtcodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                produto = pdao.retornaProdutoPorCodigo(int.Parse(txtcodigo.Text));
+
+                txtdescricao.Text = produto.descricao;
+                txtpreco.Value = produto.preco;
             }
         }
     }

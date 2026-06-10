@@ -224,11 +224,11 @@
             // 
             // txtcodigo
             // 
-            this.txtcodigo.Enabled = false;
             this.txtcodigo.Location = new System.Drawing.Point(113, 35);
             this.txtcodigo.Name = "txtcodigo";
             this.txtcodigo.Size = new System.Drawing.Size(93, 26);
             this.txtcodigo.TabIndex = 29;
+            this.txtcodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcodigo_KeyPress);
             // 
             // label2
             // 
