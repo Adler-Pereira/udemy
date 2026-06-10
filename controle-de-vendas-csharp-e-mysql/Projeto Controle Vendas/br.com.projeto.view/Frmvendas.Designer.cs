@@ -36,6 +36,8 @@
             this.txtcpf = new System.Windows.Forms.MaskedTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnremover = new System.Windows.Forms.Button();
+            this.btnadd = new System.Windows.Forms.Button();
             this.txtdescricao = new System.Windows.Forms.TextBox();
             this.txtpreco = new System.Windows.Forms.NumericUpDown();
             this.txtcodigo = new System.Windows.Forms.TextBox();
@@ -44,14 +46,14 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtqtd = new System.Windows.Forms.NumericUpDown();
-            this.btnadd = new System.Windows.Forms.Button();
-            this.btnremover = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txttotal = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
             this.btncancelar = new System.Windows.Forms.Button();
             this.btnpagamento = new System.Windows.Forms.Button();
+            this.txtdata = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -85,20 +87,22 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtdata);
+            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txtnome);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtcpf);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Location = new System.Drawing.Point(37, 105);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(407, 153);
+            this.groupBox1.Size = new System.Drawing.Size(407, 207);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             // 
             // txtnome
             // 
             this.txtnome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtnome.Location = new System.Drawing.Point(113, 89);
+            this.txtnome.Location = new System.Drawing.Point(113, 139);
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(266, 26);
             this.txtnome.TabIndex = 13;
@@ -108,7 +112,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Location = new System.Drawing.Point(57, 92);
+            this.label3.Location = new System.Drawing.Point(57, 142);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 20);
             this.label3.TabIndex = 12;
@@ -117,7 +121,7 @@
             // txtcpf
             // 
             this.txtcpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtcpf.Location = new System.Drawing.Point(113, 39);
+            this.txtcpf.Location = new System.Drawing.Point(113, 89);
             this.txtcpf.Mask = "###,###,###-##";
             this.txtcpf.Name = "txtcpf";
             this.txtcpf.Size = new System.Drawing.Size(122, 26);
@@ -128,7 +132,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label6.Location = new System.Drawing.Point(69, 42);
+            this.label6.Location = new System.Drawing.Point(69, 92);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 20);
             this.label6.TabIndex = 10;
@@ -147,11 +151,35 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.txtqtd);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.groupBox2.Location = new System.Drawing.Point(37, 275);
+            this.groupBox2.Location = new System.Drawing.Point(37, 356);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(407, 258);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
+            // 
+            // btnremover
+            // 
+            this.btnremover.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnremover.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnremover.ForeColor = System.Drawing.Color.White;
+            this.btnremover.Location = new System.Drawing.Point(211, 191);
+            this.btnremover.Name = "btnremover";
+            this.btnremover.Size = new System.Drawing.Size(145, 40);
+            this.btnremover.TabIndex = 37;
+            this.btnremover.Text = "Remover Item";
+            this.btnremover.UseVisualStyleBackColor = false;
+            // 
+            // btnadd
+            // 
+            this.btnadd.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnadd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnadd.ForeColor = System.Drawing.Color.White;
+            this.btnadd.Location = new System.Drawing.Point(51, 191);
+            this.btnadd.Name = "btnadd";
+            this.btnadd.Size = new System.Drawing.Size(145, 40);
+            this.btnadd.TabIndex = 36;
+            this.btnadd.Text = "Adicionar Item";
+            this.btnadd.UseVisualStyleBackColor = false;
             // 
             // txtdescricao
             // 
@@ -234,30 +262,6 @@
             this.txtqtd.Size = new System.Drawing.Size(93, 26);
             this.txtqtd.TabIndex = 32;
             // 
-            // btnadd
-            // 
-            this.btnadd.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnadd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnadd.ForeColor = System.Drawing.Color.White;
-            this.btnadd.Location = new System.Drawing.Point(51, 191);
-            this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(145, 40);
-            this.btnadd.TabIndex = 36;
-            this.btnadd.Text = "Adicionar Item";
-            this.btnadd.UseVisualStyleBackColor = false;
-            // 
-            // btnremover
-            // 
-            this.btnremover.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnremover.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnremover.ForeColor = System.Drawing.Color.White;
-            this.btnremover.Location = new System.Drawing.Point(211, 191);
-            this.btnremover.Name = "btnremover";
-            this.btnremover.Size = new System.Drawing.Size(145, 40);
-            this.btnremover.TabIndex = 37;
-            this.btnremover.Text = "Remover Item";
-            this.btnremover.UseVisualStyleBackColor = false;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -333,6 +337,25 @@
             this.btnpagamento.Text = "Pagamento";
             this.btnpagamento.UseVisualStyleBackColor = false;
             // 
+            // txtdata
+            // 
+            this.txtdata.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtdata.Location = new System.Drawing.Point(113, 40);
+            this.txtdata.Name = "txtdata";
+            this.txtdata.Size = new System.Drawing.Size(122, 26);
+            this.txtdata.TabIndex = 15;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label9.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label9.Location = new System.Drawing.Point(65, 43);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(48, 20);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Data:";
+            // 
             // Frmvendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -389,5 +412,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btncancelar;
         private System.Windows.Forms.Button btnpagamento;
+        private System.Windows.Forms.TextBox txtdata;
+        private System.Windows.Forms.Label label9;
     }
 }
