@@ -31,6 +31,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtdata = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.txtnome = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtcpf = new System.Windows.Forms.MaskedTextBox();
@@ -52,8 +54,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btncancelar = new System.Windows.Forms.Button();
             this.btnpagamento = new System.Windows.Forms.Button();
-            this.txtdata = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -99,6 +99,25 @@
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             // 
+            // txtdata
+            // 
+            this.txtdata.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtdata.Location = new System.Drawing.Point(113, 40);
+            this.txtdata.Name = "txtdata";
+            this.txtdata.Size = new System.Drawing.Size(122, 26);
+            this.txtdata.TabIndex = 15;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label9.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label9.Location = new System.Drawing.Point(65, 43);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(48, 20);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Data:";
+            // 
             // txtnome
             // 
             this.txtnome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -126,6 +145,7 @@
             this.txtcpf.Name = "txtcpf";
             this.txtcpf.Size = new System.Drawing.Size(122, 26);
             this.txtcpf.TabIndex = 11;
+            this.txtcpf.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcpf_KeyPress);
             // 
             // label6
             // 
@@ -336,25 +356,6 @@
             this.btnpagamento.TabIndex = 38;
             this.btnpagamento.Text = "Pagamento";
             this.btnpagamento.UseVisualStyleBackColor = false;
-            // 
-            // txtdata
-            // 
-            this.txtdata.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtdata.Location = new System.Drawing.Point(113, 40);
-            this.txtdata.Name = "txtdata";
-            this.txtdata.Size = new System.Drawing.Size(122, 26);
-            this.txtdata.TabIndex = 15;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label9.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label9.Location = new System.Drawing.Point(65, 43);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(48, 20);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Data:";
             // 
             // Frmvendas
             // 

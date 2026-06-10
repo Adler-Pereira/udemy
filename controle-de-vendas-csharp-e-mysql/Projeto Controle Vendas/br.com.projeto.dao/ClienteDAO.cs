@@ -126,18 +126,19 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
 
                 conexao.Open();
                 MySqlDataReader rs = executacmd.ExecuteReader();
-                conexao.Close();
 
                 if (rs.Read())
                 {
                     obj.codigo = rs.GetInt32("id");
                     obj.nome = rs.GetString("nome");
+                    conexao.Close();
 
                     return obj;
                 }
                 else
                 {
                     MessageBox.Show("Cliente não encontrado!");
+                    conexao.Close();
 
                     return null;
                 }
