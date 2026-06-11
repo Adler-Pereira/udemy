@@ -21,8 +21,8 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
         {
             this.carrinho = carrinho;
             this.cliente = cliente;
-            InitializeComponent();
             this.dataatual = dataatual;
+            InitializeComponent();
         }
     }
 }
