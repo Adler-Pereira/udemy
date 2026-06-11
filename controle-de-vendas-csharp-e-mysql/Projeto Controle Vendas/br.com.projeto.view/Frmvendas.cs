@@ -105,7 +105,8 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
 
         private void btnpagamento_Click(object sender, EventArgs e)
         {
-            Frmpagamentos tela = new Frmpagamentos(cliente, carrinho);
+            DateTime dataatual = DateTime.Parse(txtdata.Text);
+            Frmpagamentos tela = new Frmpagamentos(cliente, carrinho, dataatual);
             tela.txttotal.Value = total;
 
             tela.ShowDialog();
@@ -113,7 +114,7 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
 
         private void Frmvendas_Load(object sender, EventArgs e)
         {
-
+            txtdata.Text = DateTime.Now.ToShortDateString();
         }
     }
 }
