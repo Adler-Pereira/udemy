@@ -43,3 +43,4 @@ C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle V
 C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\obj\Debug\Projeto_Controle_Vendas.br.com.projeto.view.Frmfornecedores.resources
 C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\obj\Debug\Projeto_Controle_Vendas.br.com.projeto.view.Frmprodutos.resources
 C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\obj\Debug\Projeto_Controle_Vendas.br.com.projeto.view.Frmvendas.resources
+C:\dev\estudos\csharp\udemy\controle-de-vendas-csharp-e-mysql\Projeto Controle Vendas\obj\Debug\Projeto_Controle_Vendas.br.com.projeto.view.Frmpagamentos.resources

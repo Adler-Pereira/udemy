@@ -62,22 +62,29 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
 
         private void btnadd_Click(object sender, EventArgs e)
         {
-            qtd = int.Parse(txtqtd.Text);
-            preco = txtpreco.Value;
+            try
+            {
+                qtd = int.Parse(txtqtd.Text);
+                preco = txtpreco.Value;
 
-            subtotal = qtd * preco;
+                subtotal = qtd * preco;
 
-            total += subtotal;
+                total += subtotal;
 
-            carrinho.Rows.Add(int.Parse(txtcodigo.Text), txtdescricao.Text, qtd, preco, subtotal);
-            txttotal.Value = total;
+                carrinho.Rows.Add(int.Parse(txtcodigo.Text), txtdescricao.Text, qtd, preco, subtotal);
+                txttotal.Value = total;
 
-            txtcodigo.Clear();
-            txtdescricao.Clear();
-            txtqtd.Value = 0;
-            txtpreco.Value = 0;
+                txtcodigo.Clear();
+                txtdescricao.Clear();
+                txtqtd.Value = 0;
+                txtpreco.Value = 0;
 
-            txtcodigo.Focus();
+                txtcodigo.Focus();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Digite o código do Produto!");
+            }
         }
 
         private void btnremover_Click(object sender, EventArgs e)
@@ -94,6 +101,14 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
             txttotal.Value = total;
 
             MessageBox.Show("Item removido do carrinho com sucesso!");
+        }
+
+        private void btnpagamento_Click(object sender, EventArgs e)
+        {
+            Frmpagamentos tela = new Frmpagamentos(cliente, carrinho);
+            tela.txttotal.Value = total;
+
+            tela.ShowDialog();
         }
 
         private void Frmvendas_Load(object sender, EventArgs e)

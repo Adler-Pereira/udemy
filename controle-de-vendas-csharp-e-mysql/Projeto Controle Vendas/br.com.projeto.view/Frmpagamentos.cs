@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projeto_Controle_Vendas.br.com.projeto.model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +13,13 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
 {
     public partial class Frmpagamentos : Form
     {
-        public Frmpagamentos()
+        Cliente cliente = new Cliente();
+        DataTable carrinho = new DataTable();
+
+        public Frmpagamentos(Cliente cliente, DataTable carrinho)
         {
+            this.carrinho = carrinho;
+            this.cliente = cliente;
             InitializeComponent();
         }
     }
