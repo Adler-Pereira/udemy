@@ -80,6 +80,22 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
             txtcodigo.Focus();
         }
 
+        private void btnremover_Click(object sender, EventArgs e)
+        {
+            decimal subproduto = decimal.Parse(tabelaProdutos.CurrentRow.Cells[4].Value.ToString());
+            int indice = tabelaProdutos.CurrentRow.Index;
+            DataRow linha = carrinho.Rows[indice];
+
+            carrinho.Rows.Remove(linha);
+            carrinho.AcceptChanges();
+
+            total -= subproduto;
+
+            txttotal.Value = total;
+
+            MessageBox.Show("Item removido do carrinho com sucesso!");
+        }
+
         private void Frmvendas_Load(object sender, EventArgs e)
         {
 
