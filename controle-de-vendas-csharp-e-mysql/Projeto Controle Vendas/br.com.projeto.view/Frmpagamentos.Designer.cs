@@ -39,6 +39,8 @@
             this.txttotal = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.btnfinalizar = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtobs = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtdinheiro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtcartao)).BeginInit();
@@ -51,7 +53,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(72, 18);
+            this.label1.Location = new System.Drawing.Point(302, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(297, 56);
             this.label1.TabIndex = 0;
@@ -64,7 +66,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(468, 92);
+            this.panel1.Size = new System.Drawing.Size(936, 92);
             this.panel1.TabIndex = 15;
             // 
             // txtdinheiro
@@ -184,12 +186,34 @@
             this.btnfinalizar.TabIndex = 43;
             this.btnfinalizar.Text = "Finalizar Venda";
             this.btnfinalizar.UseVisualStyleBackColor = false;
+            this.btnfinalizar.Click += new System.EventHandler(this.btnfinalizar_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label6.Location = new System.Drawing.Point(492, 132);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(101, 39);
+            this.label6.TabIndex = 44;
+            this.label6.Text = "Obs.:";
+            // 
+            // txtobs
+            // 
+            this.txtobs.Location = new System.Drawing.Point(499, 176);
+            this.txtobs.Multiline = true;
+            this.txtobs.Name = "txtobs";
+            this.txtobs.Size = new System.Drawing.Size(413, 282);
+            this.txtobs.TabIndex = 45;
             // 
             // Frmpagamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(468, 485);
+            this.ClientSize = new System.Drawing.Size(936, 485);
+            this.Controls.Add(this.txtobs);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnfinalizar);
             this.Controls.Add(this.txttotal);
             this.Controls.Add(this.label4);
@@ -226,5 +250,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnfinalizar;
         public System.Windows.Forms.NumericUpDown txttotal;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtobs;
     }
 }

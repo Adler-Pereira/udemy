@@ -34,6 +34,7 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
                 executacmd.Parameters.AddWithValue("@total_venda", obj.total_venda);
                 executacmd.Parameters.AddWithValue("@obs", obj.obs);
 
+                conexao.Open();
                 executacmd.ExecuteNonQuery();
 
                 MessageBox.Show("Venda Cadastrada com Sucesso!");
