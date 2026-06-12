@@ -246,5 +246,70 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
             }
         }
         #endregion
+
+        #region BaixaEstoque
+        public void baixaEstoque(int idproduto, int qtdestoque)
+        {
+            try
+            {
+                if (retornaEstoqueAtual(idproduto) != -1)
+                {
+                    string sql = @"UPDATE tb_produtos SET qtd_estoque=@qtd
+                                   WHERE id=@id";
+
+                    MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+
+                    executacmd.Parameters.AddWithValue("@id", idproduto);
+                    executacmd.Parameters.AddWithValue("@qtd", qtdestoque);
+
+                    conexao.Open();
+                    executacmd.ExecuteNonQuery();
+                    conexao.Close();
+                }
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Aconteceu o erro: " + erro);
+            }
+        }
+        #endregion
+
+        #region RetornaEstoqueAtual
+        public int retornaEstoqueAtual(int idproduto)
+        {
+            try
+            {
+                int estoqueatual;
+                string sql = @"SELECT qtd_estoque FROM tb_produtos WHERE id=@id";
+
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+
+                executacmd.Parameters.AddWithValue("@id", idproduto);
+
+                conexao.Open();
+                MySqlDataReader rs = executacmd.ExecuteReader();
+
+                if (rs.Read())
+                {
+                    estoqueatual = rs.GetInt32(0);
+
+                    conexao.Close();
+                    return estoqueatual;
+                }
+                else
+                {
+                    MessageBox.Show("Nenhum produto encontrado com esse código!");
+
+                    conexao.Close();
+                    return -1;
+                }
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Aconteceu o erro: " + erro);
+                return -1;
+            }
+        }
+        #endregion
     }
 }
