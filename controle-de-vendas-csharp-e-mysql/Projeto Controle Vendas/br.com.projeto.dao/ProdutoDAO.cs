@@ -298,7 +298,7 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
                 }
                 else
                 {
-                    MessageBox.Show("Nenhum produto encontrado com esse código!");
+                    MessageBox.Show("Nenhum produto encontrado com o código: " + idproduto);
 
                     conexao.Close();
                     return -1;

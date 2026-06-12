@@ -280,9 +280,19 @@
             0,
             0,
             0});
+            this.txtqtd.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.txtqtd.Name = "txtqtd";
             this.txtqtd.Size = new System.Drawing.Size(93, 26);
             this.txtqtd.TabIndex = 32;
+            this.txtqtd.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // tabelaProdutos
             // 

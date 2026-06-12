@@ -65,8 +65,21 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
 
                 if (produto != null)
                 {
-                    txtdescricao.Text = produto.descricao;
-                    txtpreco.Value = produto.preco;
+                    ProdutoDAO p_dao = new ProdutoDAO();
+                    int estoqueatual = p_dao.retornaEstoqueAtual(produto.id);
+
+                    if (p_dao.retornaEstoqueAtual(produto.id) != 0)
+                    {
+                        txtdescricao.Text = produto.descricao;
+                        txtpreco.Value = produto.preco;
+                        txtqtd.Maximum = p_dao.retornaEstoqueAtual(produto.id);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Não há estoque desse produto");
+                        txtcodigo.Clear();
+                        txtcodigo.Focus();
+                    }
                 }
                 else
                 {
@@ -80,26 +93,33 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
         {
             try
             {
-                qtd = int.Parse(txtqtd.Text);
-                preco = txtpreco.Value;
+                if (!txtcodigo.Text.Equals(""))
+                {
+                    qtd = int.Parse(txtqtd.Text);
+                    preco = txtpreco.Value;
 
-                subtotal = qtd * preco;
+                    subtotal = qtd * preco;
 
-                total += subtotal;
+                    total += subtotal;
 
-                carrinho.Rows.Add(int.Parse(txtcodigo.Text), txtdescricao.Text, qtd, preco, subtotal);
-                txttotal.Value = total;
+                    carrinho.Rows.Add(int.Parse(txtcodigo.Text), txtdescricao.Text, qtd, preco, subtotal);
+                    txttotal.Value = total;
 
-                txtcodigo.Clear();
-                txtdescricao.Clear();
-                txtqtd.Value = 0;
-                txtpreco.Value = 0;
+                    txtcodigo.Clear();
+                    txtdescricao.Clear();
+                    txtqtd.Value = txtqtd.Minimum;
+                    txtpreco.Value = 0;
 
-                txtcodigo.Focus();
+                    txtcodigo.Focus();
+                }
+                else
+                {
+                    MessageBox.Show("Digite o código do Produto!");
+                }
             }
-            catch (Exception)
+            catch (Exception erro)
             {
-                MessageBox.Show("Digite o código do Produto!");
+                MessageBox.Show("Aconteceu o erro: " + erro);
             }
         }
 

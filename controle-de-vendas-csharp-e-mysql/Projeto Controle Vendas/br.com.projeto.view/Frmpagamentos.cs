@@ -61,13 +61,26 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
                     {
                         ItemVenda item = new ItemVenda();
                         ItemVendaDAO i_dao = new ItemVendaDAO();
+                        ProdutoDAO p_dao = new ProdutoDAO();
+                        int estoqueatual = 0;
 
                         item.venda_id = v_dao.retornaIdUltimaVenda();
                         item.produto_id = int.Parse(linha["Código"].ToString());
                         item.qtd = int.Parse(linha["Qtd"].ToString());
                         item.subtotal = decimal.Parse(linha["Subtotal"].ToString());
 
-                        i_dao.cadastrarItem(item);
+                        if (p_dao.retornaEstoqueAtual(item.produto_id) != -1)
+                        {
+                            estoqueatual = p_dao.retornaEstoqueAtual(item.produto_id);
+                            estoqueatual -= item.qtd;
+
+                            i_dao.cadastrarItem(item);
+                            p_dao.baixaEstoque(item.produto_id, estoqueatual);
+                        }
+                        else
+                        {
+                            break;
+                        }
                     }
 
                     MessageBox.Show("Venda Finalizada com Sucesso!");
