@@ -45,7 +45,15 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
             {
                 cliente = cdao.retornaClientePorCpf(txtcpf.Text);
 
-                txtnome.Text = cliente.nome;
+                if (cliente != null)
+                {
+                    txtnome.Text = cliente.nome;
+                }
+                else
+                {
+                    txtcpf.Clear();
+                    txtcpf.Focus();
+                }
             }
         }
 
@@ -55,8 +63,16 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
             {
                 produto = pdao.retornaProdutoPorCodigo(int.Parse(txtcodigo.Text));
 
-                txtdescricao.Text = produto.descricao;
-                txtpreco.Value = produto.preco;
+                if (produto != null)
+                {
+                    txtdescricao.Text = produto.descricao;
+                    txtpreco.Value = produto.preco;
+                }
+                else
+                {
+                    txtcodigo.Clear();
+                    txtcodigo.Focus();
+                }
             }
         }
 

@@ -71,7 +71,9 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
                     }
 
                     MessageBox.Show("Venda Finalizada com Sucesso!");
-                    this.Close();
+
+                    this.Dispose();
+                    new Frmvendas().ShowDialog();
                 }
             }
             catch (Exception erro)
