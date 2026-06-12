@@ -37,7 +37,7 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
                 conexao.Open();
                 executacmd.ExecuteNonQuery();
 
-                MessageBox.Show("Item cadastrado com Sucesso!");
+                //MessageBox.Show("Item cadastrado com Sucesso!");
                 conexao.Close();
             }
             catch (Exception erro)
