@@ -377,7 +377,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1049, 707);
+            this.ClientSize = new System.Drawing.Size(1049, 706);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.btnpagamento);
             this.Controls.Add(this.groupBox3);
