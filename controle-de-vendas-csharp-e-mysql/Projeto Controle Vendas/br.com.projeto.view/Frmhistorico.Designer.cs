@@ -140,6 +140,7 @@
             this.tabelaHistorico.ReadOnly = true;
             this.tabelaHistorico.Size = new System.Drawing.Size(1049, 460);
             this.tabelaHistorico.TabIndex = 17;
+            this.tabelaHistorico.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tabelaHistorico_CellClick);
             // 
             // Frmhistorico
             // 

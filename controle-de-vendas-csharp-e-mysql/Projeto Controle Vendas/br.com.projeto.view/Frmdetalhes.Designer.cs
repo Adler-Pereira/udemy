@@ -31,14 +31,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtcliente = new System.Windows.Forms.TextBox();
-            this.txtdata = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txttotal = new System.Windows.Forms.NumericUpDown();
-            this.label8 = new System.Windows.Forms.Label();
             this.txtobs = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.txttotal = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtdata = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtcliente = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.tabelaDetalhes = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -84,45 +84,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados da venda";
             // 
-            // label9
+            // txtobs
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label9.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label9.Location = new System.Drawing.Point(44, 46);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 20);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Cliente:";
+            this.txtobs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtobs.Location = new System.Drawing.Point(112, 141);
+            this.txtobs.Multiline = true;
+            this.txtobs.Name = "txtobs";
+            this.txtobs.ReadOnly = true;
+            this.txtobs.Size = new System.Drawing.Size(882, 104);
+            this.txtobs.TabIndex = 40;
             // 
-            // txtcliente
+            // label3
             // 
-            this.txtcliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtcliente.Location = new System.Drawing.Point(112, 43);
-            this.txtcliente.Name = "txtcliente";
-            this.txtcliente.ReadOnly = true;
-            this.txtcliente.Size = new System.Drawing.Size(311, 26);
-            this.txtcliente.TabIndex = 21;
-            // 
-            // txtdata
-            // 
-            this.txtdata.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtdata.Location = new System.Drawing.Point(112, 93);
-            this.txtdata.Name = "txtdata";
-            this.txtdata.ReadOnly = true;
-            this.txtdata.Size = new System.Drawing.Size(311, 26);
-            this.txtdata.TabIndex = 23;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(44, 96);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 20);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Data:";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label3.Location = new System.Drawing.Point(44, 141);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 20);
+            this.label3.TabIndex = 39;
+            this.label3.Text = "Obs:";
             // 
             // txttotal
             // 
@@ -157,26 +138,45 @@
             this.label8.TabIndex = 37;
             this.label8.Text = "Total da venda:";
             // 
-            // txtobs
+            // txtdata
             // 
-            this.txtobs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtobs.Location = new System.Drawing.Point(112, 141);
-            this.txtobs.Multiline = true;
-            this.txtobs.Name = "txtobs";
-            this.txtobs.ReadOnly = true;
-            this.txtobs.Size = new System.Drawing.Size(882, 104);
-            this.txtobs.TabIndex = 40;
+            this.txtdata.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtdata.Location = new System.Drawing.Point(112, 93);
+            this.txtdata.Name = "txtdata";
+            this.txtdata.ReadOnly = true;
+            this.txtdata.Size = new System.Drawing.Size(311, 26);
+            this.txtdata.TabIndex = 23;
             // 
-            // label3
+            // label2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Location = new System.Drawing.Point(44, 141);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 20);
-            this.label3.TabIndex = 39;
-            this.label3.Text = "Obs:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label2.Location = new System.Drawing.Point(44, 96);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 20);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Data:";
+            // 
+            // txtcliente
+            // 
+            this.txtcliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtcliente.Location = new System.Drawing.Point(112, 43);
+            this.txtcliente.Name = "txtcliente";
+            this.txtcliente.ReadOnly = true;
+            this.txtcliente.Size = new System.Drawing.Size(311, 26);
+            this.txtcliente.TabIndex = 21;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label9.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label9.Location = new System.Drawing.Point(44, 46);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(62, 20);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "Cliente:";
             // 
             // tabelaDetalhes
             // 
@@ -216,13 +216,13 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtdata;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtcliente;
-        private System.Windows.Forms.TextBox txtobs;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown txttotal;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView tabelaDetalhes;
+        public System.Windows.Forms.TextBox txtdata;
+        public System.Windows.Forms.TextBox txtcliente;
+        public System.Windows.Forms.TextBox txtobs;
+        public System.Windows.Forms.NumericUpDown txttotal;
     }
 }

@@ -34,5 +34,19 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
 
             tabelaHistorico.DataSource = vdao.listarVendas();
         }
+
+        private void tabelaHistorico_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Frmdetalhes frmdetalhes = new Frmdetalhes();
+
+            DateTime dataVenda = Convert.ToDateTime(tabelaHistorico.CurrentRow.Cells[1].Value.ToString());
+
+            frmdetalhes.txtdata.Text = dataVenda.ToString("dd/MM/yyyy");
+            frmdetalhes.txtcliente.Text = tabelaHistorico.CurrentRow.Cells[2].Value.ToString();
+            frmdetalhes.txttotal.Value = Convert.ToDecimal(tabelaHistorico.CurrentRow.Cells[3].Value);
+            frmdetalhes.txtobs.Text = tabelaHistorico.CurrentRow.Cells[4].Value.ToString();
+
+            frmdetalhes.ShowDialog();
+        }
     }
 }
