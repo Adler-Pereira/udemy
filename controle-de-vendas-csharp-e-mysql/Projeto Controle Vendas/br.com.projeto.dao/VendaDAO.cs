@@ -48,6 +48,40 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
         }
         #endregion
 
+        #region ListarVendas
+        public DataTable listarVendas()
+        {
+            try
+            {
+                DataTable tabelaHistorico = new DataTable();
+
+                string sql = @"SELECT
+	                                v.id			AS 'Código',
+	                                v.data_venda	AS 'Data da Venda',
+	                                c.nome			AS 'Cliente',
+	                                v.total_venda	AS 'Total',
+	                                v.observacoes	AS 'Obs'
+	                           FROM tb_vendas v JOIN tb_clientes c ON (v.cliente_id = c.id)";
+
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+
+                conexao.Open();
+                executacmd.ExecuteNonQuery();
+
+                MySqlDataAdapter da = new MySqlDataAdapter(executacmd);
+                da.Fill(tabelaHistorico);
+                conexao.Close();
+
+                return tabelaHistorico;
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Aconteceu o erro: " + erro);
+                return null;
+            }
+        }
+        #endregion
+
         #region RetornaIdUltimaVenda
         public int retornaIdUltimaVenda()
         {
@@ -86,7 +120,7 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
 
                 string sql = @"SELECT
 	                                v.id			AS 'Código',
-	                                v.data_venda	AS 'Data da venda',
+	                                v.data_venda	AS 'Data da Venda',
 	                                c.nome			AS 'Cliente',
 	                                v.total_venda	AS 'Total',
 	                                v.observacoes	AS 'Obs'

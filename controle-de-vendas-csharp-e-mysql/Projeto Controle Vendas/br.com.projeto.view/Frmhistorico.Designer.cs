@@ -31,17 +31,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.dtInicio = new System.Windows.Forms.DateTimePicker();
+            this.btnpesquisar = new System.Windows.Forms.Button();
             this.dtFim = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
+            this.dtInicio = new System.Windows.Forms.DateTimePicker();
+            this.label9 = new System.Windows.Forms.Label();
             this.tabelaHistorico = new System.Windows.Forms.DataGridView();
-            this.btnpesquisar = new System.Windows.Forms.Button();
-            this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colData = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colObs = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabelaHistorico)).BeginInit();
@@ -82,25 +77,18 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Consulta";
             // 
-            // label9
+            // btnpesquisar
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label9.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label9.Location = new System.Drawing.Point(44, 46);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(89, 20);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Data Início:";
-            // 
-            // dtInicio
-            // 
-            this.dtInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dtInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtInicio.Location = new System.Drawing.Point(139, 44);
-            this.dtInicio.Name = "dtInicio";
-            this.dtInicio.Size = new System.Drawing.Size(200, 26);
-            this.dtInicio.TabIndex = 16;
+            this.btnpesquisar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnpesquisar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpesquisar.ForeColor = System.Drawing.Color.White;
+            this.btnpesquisar.Location = new System.Drawing.Point(876, 38);
+            this.btnpesquisar.Name = "btnpesquisar";
+            this.btnpesquisar.Size = new System.Drawing.Size(114, 40);
+            this.btnpesquisar.TabIndex = 19;
+            this.btnpesquisar.Text = "Pesquisar";
+            this.btnpesquisar.UseVisualStyleBackColor = false;
+            this.btnpesquisar.Click += new System.EventHandler(this.btnpesquisar_Click);
             // 
             // dtFim
             // 
@@ -122,68 +110,36 @@
             this.label2.TabIndex = 17;
             this.label2.Text = "Data Fim:";
             // 
+            // dtInicio
+            // 
+            this.dtInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dtInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtInicio.Location = new System.Drawing.Point(139, 44);
+            this.dtInicio.Name = "dtInicio";
+            this.dtInicio.Size = new System.Drawing.Size(200, 26);
+            this.dtInicio.TabIndex = 16;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label9.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label9.Location = new System.Drawing.Point(44, 46);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(89, 20);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "Data Início:";
+            // 
             // tabelaHistorico
             // 
             this.tabelaHistorico.AllowUserToAddRows = false;
             this.tabelaHistorico.AllowUserToDeleteRows = false;
             this.tabelaHistorico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tabelaHistorico.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colCodigo,
-            this.colData,
-            this.colCliente,
-            this.colTotal,
-            this.colObs});
             this.tabelaHistorico.Location = new System.Drawing.Point(0, 246);
             this.tabelaHistorico.Name = "tabelaHistorico";
             this.tabelaHistorico.ReadOnly = true;
             this.tabelaHistorico.Size = new System.Drawing.Size(1049, 460);
             this.tabelaHistorico.TabIndex = 17;
-            // 
-            // btnpesquisar
-            // 
-            this.btnpesquisar.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnpesquisar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnpesquisar.ForeColor = System.Drawing.Color.White;
-            this.btnpesquisar.Location = new System.Drawing.Point(876, 38);
-            this.btnpesquisar.Name = "btnpesquisar";
-            this.btnpesquisar.Size = new System.Drawing.Size(114, 40);
-            this.btnpesquisar.TabIndex = 19;
-            this.btnpesquisar.Text = "Pesquisar";
-            this.btnpesquisar.UseVisualStyleBackColor = false;
-            // 
-            // colCodigo
-            // 
-            this.colCodigo.HeaderText = "Código";
-            this.colCodigo.Name = "colCodigo";
-            this.colCodigo.ReadOnly = true;
-            // 
-            // colData
-            // 
-            this.colData.HeaderText = "Data da Venda";
-            this.colData.Name = "colData";
-            this.colData.ReadOnly = true;
-            this.colData.Width = 200;
-            // 
-            // colCliente
-            // 
-            this.colCliente.HeaderText = "Cliente";
-            this.colCliente.Name = "colCliente";
-            this.colCliente.ReadOnly = true;
-            this.colCliente.Width = 200;
-            // 
-            // colTotal
-            // 
-            this.colTotal.HeaderText = "Total";
-            this.colTotal.Name = "colTotal";
-            this.colTotal.ReadOnly = true;
-            this.colTotal.Width = 200;
-            // 
-            // colObs
-            // 
-            this.colObs.HeaderText = "Obs";
-            this.colObs.Name = "colObs";
-            this.colObs.ReadOnly = true;
-            this.colObs.Width = 300;
             // 
             // Frmhistorico
             // 
@@ -195,6 +151,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Frmhistorico";
             this.Text = "Frmhistorico";
+            this.Load += new System.EventHandler(this.Frmhistorico_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -215,10 +172,5 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridView tabelaHistorico;
         private System.Windows.Forms.Button btnpesquisar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colCodigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colData;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTotal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colObs;
     }
 }
