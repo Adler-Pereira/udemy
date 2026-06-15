@@ -150,7 +150,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Name = "Frmhistorico";
-            this.Text = "Frmhistorico";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Histórico de vendas";
             this.Load += new System.EventHandler(this.Frmhistorico_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
