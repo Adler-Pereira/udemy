@@ -49,7 +49,7 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
         #endregion
 
         #region ListarItensPorVenda
-        public DataTable listarItensPorVenda(int vendaId)
+        public DataTable ListarItensPorVenda(int vendaId)
         {
             try
             {

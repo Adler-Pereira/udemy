@@ -200,6 +200,7 @@
             this.Name = "Frmdetalhes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Detalhes da venda";
+            this.Load += new System.EventHandler(this.Frmdetalhes_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

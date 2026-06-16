@@ -37,7 +37,9 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
 
         private void tabelaHistorico_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            Frmdetalhes frmdetalhes = new Frmdetalhes();
+            int vendaId = Convert.ToInt32(tabelaHistorico.CurrentRow.Cells[0].Value);
+
+            Frmdetalhes frmdetalhes = new Frmdetalhes(vendaId);
 
             DateTime dataVenda = Convert.ToDateTime(tabelaHistorico.CurrentRow.Cells[1].Value.ToString());
 
