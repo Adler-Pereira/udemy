@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projeto_Controle_Vendas.br.com.projeto.dao;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,20 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
         public Frmlogin()
         {
             InitializeComponent();
+        }
+
+        private void btnentrar_Click(object sender, EventArgs e)
+        {
+            string email = txtemail.Text;
+            string senha = txtsenha.Text;
+
+            FuncionarioDAO fdao = new FuncionarioDAO();
+
+            if (fdao.EfetuarLogin(email, senha))
+            {
+                new FrmMenu().Show();
+                this.Hide();
+            }
         }
     }
 }

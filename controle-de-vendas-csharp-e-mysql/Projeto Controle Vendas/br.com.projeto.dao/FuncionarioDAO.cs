@@ -227,5 +227,41 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
             }
         }
         #endregion
+
+        #region EfetuarLogin
+        public bool EfetuarLogin(string email, string senha)
+        {
+            try
+            {
+                string sql = @"SELECT * FROM tb_funcionarios
+                               WHERE email = @email AND senha = @senha";
+
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+
+                executacmd.Parameters.AddWithValue("@email", email);
+                executacmd.Parameters.AddWithValue("@senha", senha);
+
+                conexao.Open();
+
+                MySqlDataReader reader = executacmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    MessageBox.Show("Login realizado com sucesso!");
+                    return true;
+                }
+                else
+                {
+                    MessageBox.Show("Email ou senha incorretos.");
+                    return false;
+                }
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Aconteceu o erro: " + erro);
+                return false;
+            }
+        }
+        #endregion
     }
 }

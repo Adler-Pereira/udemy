@@ -32,9 +32,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnentrar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtdata = new System.Windows.Forms.TextBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtsenha = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,6 +70,7 @@
             this.btnentrar.TabIndex = 45;
             this.btnentrar.Text = "Entrar";
             this.btnentrar.UseVisualStyleBackColor = false;
+            this.btnentrar.Click += new System.EventHandler(this.btnentrar_Click);
             // 
             // label5
             // 
@@ -82,13 +83,13 @@
             this.label5.TabIndex = 44;
             this.label5.Text = "E-mail:";
             // 
-            // txtdata
+            // txtemail
             // 
-            this.txtdata.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.txtdata.Location = new System.Drawing.Point(220, 174);
-            this.txtdata.Name = "txtdata";
-            this.txtdata.Size = new System.Drawing.Size(571, 35);
-            this.txtdata.TabIndex = 46;
+            this.txtemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.txtemail.Location = new System.Drawing.Point(220, 174);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(571, 35);
+            this.txtemail.TabIndex = 46;
             // 
             // label2
             // 
@@ -101,23 +102,23 @@
             this.label2.TabIndex = 47;
             this.label2.Text = "Senha:";
             // 
-            // textBox1
+            // txtsenha
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.textBox1.Location = new System.Drawing.Point(220, 267);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(571, 35);
-            this.textBox1.TabIndex = 48;
+            this.txtsenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.txtsenha.Location = new System.Drawing.Point(220, 267);
+            this.txtsenha.Name = "txtsenha";
+            this.txtsenha.PasswordChar = '*';
+            this.txtsenha.Size = new System.Drawing.Size(571, 35);
+            this.txtsenha.TabIndex = 48;
             // 
             // Frmlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 486);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtsenha);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtdata);
+            this.Controls.Add(this.txtemail);
             this.Controls.Add(this.btnentrar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
@@ -137,8 +138,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnentrar;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtdata;
+        private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtsenha;
     }
 }

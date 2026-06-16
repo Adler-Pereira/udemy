@@ -249,9 +249,6 @@
     <None Include="Resources\package.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\people1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\settings.png" />
   </ItemGroup>
   <ItemGroup>
