@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.view\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|c:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\projeto controle vendas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -38,8 +38,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T13:02:13.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-16T13:02:13.164Z"
             },
             {
               "$type": "Document",
@@ -62,8 +61,7 @@
               "ToolTip": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\Frmvendas.cs [Design]",
               "RelativeToolTip": "br.com.projeto.view\\Frmvendas.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T13:57:32.514Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-06-15T13:57:32.514Z"
             }
           ]
         }

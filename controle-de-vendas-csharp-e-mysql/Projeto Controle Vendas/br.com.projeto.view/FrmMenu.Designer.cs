@@ -29,31 +29,31 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.caaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultaDeClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fornecedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastroDeFornecedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultaDeFornecedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastroDeProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultaDeProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.novaVendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.históricoDeVendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.configuraçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.trocarDeUsuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sairDoSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuClientes = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuCadastroClientes = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuConsultaClientes = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuFuncionarios = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuCadastroFuncionarios = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuConsultaFuncionarios = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuFornecedores = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuCadastroFornecedores = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuConsultaFornecedores = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuProdutos = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuCadastroProdutos = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuConsultaProdutos = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuVendas = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuNovaVenda = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuHistoricoVendas = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuConfiguracoes = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuTrocarUsuario = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuSairSistema = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.txtdata = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.txthora = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.txtusuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -61,137 +61,159 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.clienteToolStripMenuItem,
-            this.fornecedoresToolStripMenuItem,
-            this.produtosToolStripMenuItem,
-            this.vendasToolStripMenuItem,
-            this.configuraçõesToolStripMenuItem});
+            this.menuClientes,
+            this.menuFuncionarios,
+            this.menuFornecedores,
+            this.menuProdutos,
+            this.menuVendas,
+            this.menuConfiguracoes});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1049, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // clienteToolStripMenuItem
+            // menuClientes
             // 
-            this.clienteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.caaToolStripMenuItem,
-            this.consultaDeClientesToolStripMenuItem});
-            this.clienteToolStripMenuItem.Image = global::Projeto_Controle_Vendas.Properties.Resources.man;
-            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
-            this.clienteToolStripMenuItem.Text = "Funcionários";
+            this.menuClientes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuCadastroClientes,
+            this.menuConsultaClientes});
+            this.menuClientes.Image = global::Projeto_Controle_Vendas.Properties.Resources.people;
+            this.menuClientes.Name = "menuClientes";
+            this.menuClientes.Size = new System.Drawing.Size(77, 20);
+            this.menuClientes.Text = "Clientes";
             // 
-            // caaToolStripMenuItem
+            // menuCadastroClientes
             // 
-            this.caaToolStripMenuItem.Name = "caaToolStripMenuItem";
-            this.caaToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
-            this.caaToolStripMenuItem.Text = "Cadastro de Funcionários";
+            this.menuCadastroClientes.Name = "menuCadastroClientes";
+            this.menuCadastroClientes.Size = new System.Drawing.Size(182, 22);
+            this.menuCadastroClientes.Text = "Cadastro de Clientes";
             // 
-            // consultaDeClientesToolStripMenuItem
+            // menuConsultaClientes
             // 
-            this.consultaDeClientesToolStripMenuItem.Name = "consultaDeClientesToolStripMenuItem";
-            this.consultaDeClientesToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
-            this.consultaDeClientesToolStripMenuItem.Text = "Consulta de Funcionários";
+            this.menuConsultaClientes.Name = "menuConsultaClientes";
+            this.menuConsultaClientes.Size = new System.Drawing.Size(182, 22);
+            this.menuConsultaClientes.Text = "Consulta de Clientes";
             // 
-            // fornecedoresToolStripMenuItem
+            // menuFuncionarios
             // 
-            this.fornecedoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastroDeFornecedoresToolStripMenuItem,
-            this.consultaDeFornecedoresToolStripMenuItem});
-            this.fornecedoresToolStripMenuItem.Image = global::Projeto_Controle_Vendas.Properties.Resources.armazm;
-            this.fornecedoresToolStripMenuItem.Name = "fornecedoresToolStripMenuItem";
-            this.fornecedoresToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
-            this.fornecedoresToolStripMenuItem.Text = "Fornecedores";
+            this.menuFuncionarios.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuCadastroFuncionarios,
+            this.menuConsultaFuncionarios});
+            this.menuFuncionarios.Image = global::Projeto_Controle_Vendas.Properties.Resources.man;
+            this.menuFuncionarios.Name = "menuFuncionarios";
+            this.menuFuncionarios.Size = new System.Drawing.Size(103, 20);
+            this.menuFuncionarios.Text = "Funcionários";
             // 
-            // cadastroDeFornecedoresToolStripMenuItem
+            // menuCadastroFuncionarios
             // 
-            this.cadastroDeFornecedoresToolStripMenuItem.Name = "cadastroDeFornecedoresToolStripMenuItem";
-            this.cadastroDeFornecedoresToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.cadastroDeFornecedoresToolStripMenuItem.Text = "Cadastro de Fornecedores";
+            this.menuCadastroFuncionarios.Name = "menuCadastroFuncionarios";
+            this.menuCadastroFuncionarios.Size = new System.Drawing.Size(208, 22);
+            this.menuCadastroFuncionarios.Text = "Cadastro de Funcionários";
             // 
-            // consultaDeFornecedoresToolStripMenuItem
+            // menuConsultaFuncionarios
             // 
-            this.consultaDeFornecedoresToolStripMenuItem.Name = "consultaDeFornecedoresToolStripMenuItem";
-            this.consultaDeFornecedoresToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.consultaDeFornecedoresToolStripMenuItem.Text = "Consulta de Fornecedores";
+            this.menuConsultaFuncionarios.Name = "menuConsultaFuncionarios";
+            this.menuConsultaFuncionarios.Size = new System.Drawing.Size(208, 22);
+            this.menuConsultaFuncionarios.Text = "Consulta de Funcionários";
             // 
-            // produtosToolStripMenuItem
+            // menuFornecedores
             // 
-            this.produtosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastroDeProdutosToolStripMenuItem,
-            this.consultaDeProdutosToolStripMenuItem});
-            this.produtosToolStripMenuItem.Image = global::Projeto_Controle_Vendas.Properties.Resources.package;
-            this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
-            this.produtosToolStripMenuItem.Text = "Produtos";
+            this.menuFornecedores.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuCadastroFornecedores,
+            this.menuConsultaFornecedores});
+            this.menuFornecedores.Image = global::Projeto_Controle_Vendas.Properties.Resources.armazm;
+            this.menuFornecedores.Name = "menuFornecedores";
+            this.menuFornecedores.Size = new System.Drawing.Size(106, 20);
+            this.menuFornecedores.Text = "Fornecedores";
             // 
-            // cadastroDeProdutosToolStripMenuItem
+            // menuCadastroFornecedores
             // 
-            this.cadastroDeProdutosToolStripMenuItem.Name = "cadastroDeProdutosToolStripMenuItem";
-            this.cadastroDeProdutosToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.cadastroDeProdutosToolStripMenuItem.Text = "Cadastro de Produtos";
+            this.menuCadastroFornecedores.Name = "menuCadastroFornecedores";
+            this.menuCadastroFornecedores.Size = new System.Drawing.Size(211, 22);
+            this.menuCadastroFornecedores.Text = "Cadastro de Fornecedores";
             // 
-            // consultaDeProdutosToolStripMenuItem
+            // menuConsultaFornecedores
             // 
-            this.consultaDeProdutosToolStripMenuItem.Name = "consultaDeProdutosToolStripMenuItem";
-            this.consultaDeProdutosToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.consultaDeProdutosToolStripMenuItem.Text = "Consulta de Produtos";
+            this.menuConsultaFornecedores.Name = "menuConsultaFornecedores";
+            this.menuConsultaFornecedores.Size = new System.Drawing.Size(211, 22);
+            this.menuConsultaFornecedores.Text = "Consulta de Fornecedores";
             // 
-            // vendasToolStripMenuItem
+            // menuProdutos
             // 
-            this.vendasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.novaVendaToolStripMenuItem,
-            this.históricoDeVendasToolStripMenuItem});
-            this.vendasToolStripMenuItem.Image = global::Projeto_Controle_Vendas.Properties.Resources.business;
-            this.vendasToolStripMenuItem.Name = "vendasToolStripMenuItem";
-            this.vendasToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
-            this.vendasToolStripMenuItem.Text = "Vendas";
+            this.menuProdutos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuCadastroProdutos,
+            this.menuConsultaProdutos});
+            this.menuProdutos.Image = global::Projeto_Controle_Vendas.Properties.Resources.package;
+            this.menuProdutos.Name = "menuProdutos";
+            this.menuProdutos.Size = new System.Drawing.Size(83, 20);
+            this.menuProdutos.Text = "Produtos";
             // 
-            // novaVendaToolStripMenuItem
+            // menuCadastroProdutos
             // 
-            this.novaVendaToolStripMenuItem.Name = "novaVendaToolStripMenuItem";
-            this.novaVendaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.novaVendaToolStripMenuItem.Text = "Nova Venda";
+            this.menuCadastroProdutos.Name = "menuCadastroProdutos";
+            this.menuCadastroProdutos.Size = new System.Drawing.Size(188, 22);
+            this.menuCadastroProdutos.Text = "Cadastro de Produtos";
             // 
-            // históricoDeVendasToolStripMenuItem
+            // menuConsultaProdutos
             // 
-            this.históricoDeVendasToolStripMenuItem.Name = "históricoDeVendasToolStripMenuItem";
-            this.históricoDeVendasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.históricoDeVendasToolStripMenuItem.Text = "Histórico de Vendas";
+            this.menuConsultaProdutos.Name = "menuConsultaProdutos";
+            this.menuConsultaProdutos.Size = new System.Drawing.Size(188, 22);
+            this.menuConsultaProdutos.Text = "Consulta de Produtos";
             // 
-            // configuraçõesToolStripMenuItem
+            // menuVendas
             // 
-            this.configuraçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.trocarDeUsuárioToolStripMenuItem,
-            this.sairDoSistemaToolStripMenuItem});
-            this.configuraçõesToolStripMenuItem.Image = global::Projeto_Controle_Vendas.Properties.Resources.settings;
-            this.configuraçõesToolStripMenuItem.Name = "configuraçõesToolStripMenuItem";
-            this.configuraçõesToolStripMenuItem.Size = new System.Drawing.Size(112, 20);
-            this.configuraçõesToolStripMenuItem.Text = "Configurações";
+            this.menuVendas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuNovaVenda,
+            this.menuHistoricoVendas});
+            this.menuVendas.Image = global::Projeto_Controle_Vendas.Properties.Resources.business;
+            this.menuVendas.Name = "menuVendas";
+            this.menuVendas.Size = new System.Drawing.Size(72, 20);
+            this.menuVendas.Text = "Vendas";
             // 
-            // trocarDeUsuárioToolStripMenuItem
+            // menuNovaVenda
             // 
-            this.trocarDeUsuárioToolStripMenuItem.Name = "trocarDeUsuárioToolStripMenuItem";
-            this.trocarDeUsuárioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.trocarDeUsuárioToolStripMenuItem.Text = "Trocar de usuário";
+            this.menuNovaVenda.Name = "menuNovaVenda";
+            this.menuNovaVenda.Size = new System.Drawing.Size(180, 22);
+            this.menuNovaVenda.Text = "Nova Venda";
             // 
-            // sairDoSistemaToolStripMenuItem
+            // menuHistoricoVendas
             // 
-            this.sairDoSistemaToolStripMenuItem.Name = "sairDoSistemaToolStripMenuItem";
-            this.sairDoSistemaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.sairDoSistemaToolStripMenuItem.Text = "Sair do sistema";
+            this.menuHistoricoVendas.Name = "menuHistoricoVendas";
+            this.menuHistoricoVendas.Size = new System.Drawing.Size(180, 22);
+            this.menuHistoricoVendas.Text = "Histórico de Vendas";
+            // 
+            // menuConfiguracoes
+            // 
+            this.menuConfiguracoes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuTrocarUsuario,
+            this.menuSairSistema});
+            this.menuConfiguracoes.Image = global::Projeto_Controle_Vendas.Properties.Resources.settings;
+            this.menuConfiguracoes.Name = "menuConfiguracoes";
+            this.menuConfiguracoes.Size = new System.Drawing.Size(112, 20);
+            this.menuConfiguracoes.Text = "Configurações";
+            // 
+            // menuTrocarUsuario
+            // 
+            this.menuTrocarUsuario.Name = "menuTrocarUsuario";
+            this.menuTrocarUsuario.Size = new System.Drawing.Size(180, 22);
+            this.menuTrocarUsuario.Text = "Trocar de usuário";
+            // 
+            // menuSairSistema
+            // 
+            this.menuSairSistema.Name = "menuSairSistema";
+            this.menuSairSistema.Size = new System.Drawing.Size(180, 22);
+            this.menuSairSistema.Text = "Sair do sistema";
             // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
-            this.toolStripStatusLabel2,
+            this.txtdata,
             this.toolStripStatusLabel3,
-            this.toolStripStatusLabel4,
+            this.txthora,
             this.toolStripStatusLabel5,
-            this.toolStripStatusLabel6});
+            this.txtusuario});
             this.statusStrip1.Location = new System.Drawing.Point(0, 684);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1049, 22);
@@ -204,12 +226,12 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(63, 17);
             this.toolStripStatusLabel1.Text = "Data atual:";
             // 
-            // toolStripStatusLabel2
+            // txtdata
             // 
-            this.toolStripStatusLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(73, 17);
-            this.toolStripStatusLabel2.Text = "16/06/2026";
+            this.txtdata.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdata.Name = "txtdata";
+            this.txtdata.Size = new System.Drawing.Size(73, 17);
+            this.txtdata.Text = "16/06/2026";
             // 
             // toolStripStatusLabel3
             // 
@@ -217,12 +239,12 @@
             this.toolStripStatusLabel3.Size = new System.Drawing.Size(65, 17);
             this.toolStripStatusLabel3.Text = "Hora atual:";
             // 
-            // toolStripStatusLabel4
+            // txthora
             // 
-            this.toolStripStatusLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
-            this.toolStripStatusLabel4.Size = new System.Drawing.Size(38, 17);
-            this.toolStripStatusLabel4.Text = "10:30";
+            this.txthora.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txthora.Name = "txthora";
+            this.txthora.Size = new System.Drawing.Size(38, 17);
+            this.txthora.Text = "10:30";
             // 
             // toolStripStatusLabel5
             // 
@@ -230,39 +252,19 @@
             this.toolStripStatusLabel5.Size = new System.Drawing.Size(90, 17);
             this.toolStripStatusLabel5.Text = "Usuário logado:";
             // 
-            // toolStripMenuItem1
+            // txtusuario
             // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3});
-            this.toolStripMenuItem1.Image = global::Projeto_Controle_Vendas.Properties.Resources.people;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(77, 20);
-            this.toolStripMenuItem1.Text = "Clientes";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(182, 22);
-            this.toolStripMenuItem2.Text = "Cadastro de Clientes";
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(182, 22);
-            this.toolStripMenuItem3.Text = "Consulta de Clientes";
-            // 
-            // toolStripStatusLabel6
-            // 
-            this.toolStripStatusLabel6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripStatusLabel6.Name = "toolStripStatusLabel6";
-            this.toolStripStatusLabel6.Size = new System.Drawing.Size(66, 17);
-            this.toolStripStatusLabel6.Text = "Adler Lima";
+            this.txtusuario.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtusuario.Name = "txtusuario";
+            this.txtusuario.Size = new System.Drawing.Size(66, 17);
+            this.txtusuario.Text = "Adler Lima";
             // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Projeto_Controle_Vendas.Properties.Resources.fundo;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1049, 706);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -283,30 +285,30 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem caaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem consultaDeClientesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fornecedoresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadastroDeFornecedoresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultaDeFornecedoresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadastroDeProdutosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultaDeProdutosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem vendasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem novaVendaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem históricoDeVendasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem configuraçõesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem trocarDeUsuárioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sairDoSistemaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuFuncionarios;
+        private System.Windows.Forms.ToolStripMenuItem menuCadastroFuncionarios;
+        private System.Windows.Forms.ToolStripMenuItem menuClientes;
+        private System.Windows.Forms.ToolStripMenuItem menuCadastroClientes;
+        private System.Windows.Forms.ToolStripMenuItem menuConsultaClientes;
+        private System.Windows.Forms.ToolStripMenuItem menuConsultaFuncionarios;
+        private System.Windows.Forms.ToolStripMenuItem menuFornecedores;
+        private System.Windows.Forms.ToolStripMenuItem menuCadastroFornecedores;
+        private System.Windows.Forms.ToolStripMenuItem menuConsultaFornecedores;
+        private System.Windows.Forms.ToolStripMenuItem menuProdutos;
+        private System.Windows.Forms.ToolStripMenuItem menuCadastroProdutos;
+        private System.Windows.Forms.ToolStripMenuItem menuConsultaProdutos;
+        private System.Windows.Forms.ToolStripMenuItem menuVendas;
+        private System.Windows.Forms.ToolStripMenuItem menuNovaVenda;
+        private System.Windows.Forms.ToolStripMenuItem menuHistoricoVendas;
+        private System.Windows.Forms.ToolStripMenuItem menuConfiguracoes;
+        private System.Windows.Forms.ToolStripMenuItem menuTrocarUsuario;
+        private System.Windows.Forms.ToolStripMenuItem menuSairSistema;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripStatusLabel txtdata;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
+        private System.Windows.Forms.ToolStripStatusLabel txthora;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel5;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel6;
+        private System.Windows.Forms.ToolStripStatusLabel txtusuario;
     }
 }
