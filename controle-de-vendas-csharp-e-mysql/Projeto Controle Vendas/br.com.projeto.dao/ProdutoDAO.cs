@@ -206,5 +206,110 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
             }
         }
         #endregion
+
+        #region RetornaProdutoPorCodigo
+        public Produto retornaProdutoPorCodigo(int id)
+        {
+            try
+            {
+                Produto produto = new Produto();
+                string sql = @"SELECT * FROM tb_produtos WHERE id=@id";
+
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+
+                executacmd.Parameters.AddWithValue("@id", id);
+
+                conexao.Open();
+                MySqlDataReader rs = executacmd.ExecuteReader();
+
+                if (rs.Read())
+                {
+                    produto.id = rs.GetInt32("id");
+                    produto.descricao = rs.GetString("descricao");
+                    produto.preco = rs.GetDecimal("preco");
+
+                    conexao.Close();
+                    return produto;
+                }
+                else
+                {
+                    MessageBox.Show("Nenhum produto encontrado com esse código!");
+
+                    conexao.Close();
+                    return null;
+                }
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Aconteceu o erro: " + erro);
+                return null;
+            }
+        }
+        #endregion
+
+        #region BaixaEstoque
+        public void baixaEstoque(int idproduto, int qtdestoque)
+        {
+            try
+            {
+                if (retornaEstoqueAtual(idproduto) != -1)
+                {
+                    string sql = @"UPDATE tb_produtos SET qtd_estoque=@qtd
+                                   WHERE id=@id";
+
+                    MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+
+                    executacmd.Parameters.AddWithValue("@id", idproduto);
+                    executacmd.Parameters.AddWithValue("@qtd", qtdestoque);
+
+                    conexao.Open();
+                    executacmd.ExecuteNonQuery();
+                    conexao.Close();
+                }
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Aconteceu o erro: " + erro);
+            }
+        }
+        #endregion
+
+        #region RetornaEstoqueAtual
+        public int retornaEstoqueAtual(int idproduto)
+        {
+            try
+            {
+                int estoqueatual;
+                string sql = @"SELECT qtd_estoque FROM tb_produtos WHERE id=@id";
+
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+
+                executacmd.Parameters.AddWithValue("@id", idproduto);
+
+                conexao.Open();
+                MySqlDataReader rs = executacmd.ExecuteReader();
+
+                if (rs.Read())
+                {
+                    estoqueatual = rs.GetInt32(0);
+
+                    conexao.Close();
+                    return estoqueatual;
+                }
+                else
+                {
+                    MessageBox.Show("Nenhum produto encontrado com o código: " + idproduto);
+
+                    conexao.Close();
+                    return -1;
+                }
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Aconteceu o erro: " + erro);
+                return -1;
+            }
+        }
+        #endregion
     }
 }
