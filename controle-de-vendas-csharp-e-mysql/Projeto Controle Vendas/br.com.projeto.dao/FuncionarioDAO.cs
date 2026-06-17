@@ -255,6 +255,8 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
 
                     FrmMenu frmMenu = new FrmMenu();
 
+                    frmMenu.txtusuario.Text = nome;
+
                     switch (nivel)
                     {
                         case "Administrador":

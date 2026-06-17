@@ -21,5 +21,15 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
         {
             Application.Exit();
         }
+
+        private void FrmMenu_Load(object sender, EventArgs e)
+        {
+            txtdata.Text = DateTime.Now.ToShortDateString();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            txthora.Text = DateTime.Now.ToLongTimeString();
+        }
     }
 }
