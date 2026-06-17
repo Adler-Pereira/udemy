@@ -588,9 +588,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabControl tabClientes;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtcodigo;
         private System.Windows.Forms.TextBox txtemail;
@@ -629,5 +626,8 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button btnbuscar;
         private System.Windows.Forms.Button btnlimpacampos;
+        public System.Windows.Forms.TabControl tabClientes;
+        public System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage1;
     }
 }

@@ -666,7 +666,6 @@
         private System.Windows.Forms.Button btnexcluir;
         private System.Windows.Forms.Button btnsalvar;
         private System.Windows.Forms.Button btnnovo;
-        private System.Windows.Forms.TabControl tabFuncionarios;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button btnbuscar;
         private System.Windows.Forms.TextBox txtcomp;
@@ -697,7 +696,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtcodigo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataGridView tabelaFuncionario;
         private System.Windows.Forms.Button btnpesquisar;
         private System.Windows.Forms.TextBox txtpesquisa;
@@ -710,5 +708,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
+        public System.Windows.Forms.TabControl tabFuncionarios;
+        public System.Windows.Forms.TabPage tabPage2;
     }
 }

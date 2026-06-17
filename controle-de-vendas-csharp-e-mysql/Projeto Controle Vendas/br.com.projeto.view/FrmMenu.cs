@@ -31,5 +31,67 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
         {
             txthora.Text = DateTime.Now.ToLongTimeString();
         }
+
+        private void menuCadastroClientes_Click(object sender, EventArgs e)
+        {
+            new Frmclientes().ShowDialog();
+        }
+
+        private void menuConsultaClientes_Click(object sender, EventArgs e)
+        {
+            Frmclientes frmclientes = new Frmclientes();
+            frmclientes.tabClientes.SelectedTab = frmclientes.tabPage2;
+
+            frmclientes.ShowDialog();
+        }
+
+        private void menuCadastroFuncionarios_Click(object sender, EventArgs e)
+        {
+            new Frmfuncionarios().ShowDialog();
+        }
+
+        private void menuConsultaFuncionarios_Click(object sender, EventArgs e)
+        {
+            Frmfuncionarios frmfuncionarios = new Frmfuncionarios();
+            frmfuncionarios.tabFuncionarios.SelectedTab = frmfuncionarios.tabPage2;
+
+            frmfuncionarios.ShowDialog();
+        }
+
+        private void menuCadastroFornecedores_Click(object sender, EventArgs e)
+        {
+            new Frmfornecedores().ShowDialog();
+        }
+
+        private void menuConsultaFornecedores_Click(object sender, EventArgs e)
+        {
+            Frmfornecedores frmfornecedores = new Frmfornecedores();
+            frmfornecedores.tabFornecedores.SelectedTab = frmfornecedores.tabPage2;
+
+            frmfornecedores.ShowDialog();
+        }
+
+        private void menuCadastroProdutos_Click(object sender, EventArgs e)
+        {
+            new Frmprodutos().ShowDialog();
+        }
+
+        private void menuConsultaProdutos_Click(object sender, EventArgs e)
+        {
+            Frmprodutos frmprodutos = new Frmprodutos();
+            frmprodutos.tabProdutos.SelectedTab = frmprodutos.tabPage2;
+
+            frmprodutos.ShowDialog();
+        }
+
+        private void menuNovaVenda_Click(object sender, EventArgs e)
+        {
+            new Frmvendas().ShowDialog();
+        }
+
+        private void menuHistoricoVendas_Click(object sender, EventArgs e)
+        {
+            new Frmhistorico().ShowDialog();
+        }
     }
 }

@@ -90,12 +90,14 @@
             this.menuCadastroClientes.Name = "menuCadastroClientes";
             this.menuCadastroClientes.Size = new System.Drawing.Size(182, 22);
             this.menuCadastroClientes.Text = "Cadastro de Clientes";
+            this.menuCadastroClientes.Click += new System.EventHandler(this.menuCadastroClientes_Click);
             // 
             // menuConsultaClientes
             // 
             this.menuConsultaClientes.Name = "menuConsultaClientes";
             this.menuConsultaClientes.Size = new System.Drawing.Size(182, 22);
             this.menuConsultaClientes.Text = "Consulta de Clientes";
+            this.menuConsultaClientes.Click += new System.EventHandler(this.menuConsultaClientes_Click);
             // 
             // menuFuncionarios
             // 
@@ -112,12 +114,14 @@
             this.menuCadastroFuncionarios.Name = "menuCadastroFuncionarios";
             this.menuCadastroFuncionarios.Size = new System.Drawing.Size(208, 22);
             this.menuCadastroFuncionarios.Text = "Cadastro de Funcionários";
+            this.menuCadastroFuncionarios.Click += new System.EventHandler(this.menuCadastroFuncionarios_Click);
             // 
             // menuConsultaFuncionarios
             // 
             this.menuConsultaFuncionarios.Name = "menuConsultaFuncionarios";
             this.menuConsultaFuncionarios.Size = new System.Drawing.Size(208, 22);
             this.menuConsultaFuncionarios.Text = "Consulta de Funcionários";
+            this.menuConsultaFuncionarios.Click += new System.EventHandler(this.menuConsultaFuncionarios_Click);
             // 
             // menuFornecedores
             // 
@@ -134,12 +138,14 @@
             this.menuCadastroFornecedores.Name = "menuCadastroFornecedores";
             this.menuCadastroFornecedores.Size = new System.Drawing.Size(211, 22);
             this.menuCadastroFornecedores.Text = "Cadastro de Fornecedores";
+            this.menuCadastroFornecedores.Click += new System.EventHandler(this.menuCadastroFornecedores_Click);
             // 
             // menuConsultaFornecedores
             // 
             this.menuConsultaFornecedores.Name = "menuConsultaFornecedores";
             this.menuConsultaFornecedores.Size = new System.Drawing.Size(211, 22);
             this.menuConsultaFornecedores.Text = "Consulta de Fornecedores";
+            this.menuConsultaFornecedores.Click += new System.EventHandler(this.menuConsultaFornecedores_Click);
             // 
             // menuProdutos
             // 
@@ -156,12 +162,14 @@
             this.menuCadastroProdutos.Name = "menuCadastroProdutos";
             this.menuCadastroProdutos.Size = new System.Drawing.Size(188, 22);
             this.menuCadastroProdutos.Text = "Cadastro de Produtos";
+            this.menuCadastroProdutos.Click += new System.EventHandler(this.menuCadastroProdutos_Click);
             // 
             // menuConsultaProdutos
             // 
             this.menuConsultaProdutos.Name = "menuConsultaProdutos";
             this.menuConsultaProdutos.Size = new System.Drawing.Size(188, 22);
             this.menuConsultaProdutos.Text = "Consulta de Produtos";
+            this.menuConsultaProdutos.Click += new System.EventHandler(this.menuConsultaProdutos_Click);
             // 
             // menuVendas
             // 
@@ -176,14 +184,16 @@
             // menuNovaVenda
             // 
             this.menuNovaVenda.Name = "menuNovaVenda";
-            this.menuNovaVenda.Size = new System.Drawing.Size(178, 22);
+            this.menuNovaVenda.Size = new System.Drawing.Size(180, 22);
             this.menuNovaVenda.Text = "Nova Venda";
+            this.menuNovaVenda.Click += new System.EventHandler(this.menuNovaVenda_Click);
             // 
             // menuHistoricoVendas
             // 
             this.menuHistoricoVendas.Name = "menuHistoricoVendas";
-            this.menuHistoricoVendas.Size = new System.Drawing.Size(178, 22);
+            this.menuHistoricoVendas.Size = new System.Drawing.Size(180, 22);
             this.menuHistoricoVendas.Text = "Histórico de Vendas";
+            this.menuHistoricoVendas.Click += new System.EventHandler(this.menuHistoricoVendas_Click);
             // 
             // menuConfiguracoes
             // 

@@ -3,15 +3,19 @@
   "WorkspaceRootPath": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.view\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.view\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|c:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\projeto controle vendas\\br.com.projeto.dao\\funcionariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|c:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\projeto controle vendas\\br.com.projeto.view\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.view\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|c:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\projeto controle vendas\\br.com.projeto.view\\frmfornecedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.view\\frmfornecedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.dao\\funcionariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.dao\\funcionariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -42,20 +46,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Frmfornecedores.cs [Design]",
+              "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\Frmfornecedores.cs",
+              "RelativeDocumentMoniker": "br.com.projeto.view\\Frmfornecedores.cs",
+              "ToolTip": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\Frmfornecedores.cs [Design]",
+              "RelativeToolTip": "br.com.projeto.view\\Frmfornecedores.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T13:02:31.413Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "FrmMenu.cs",
               "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\FrmMenu.cs",
               "RelativeDocumentMoniker": "br.com.projeto.view\\FrmMenu.cs",
               "ToolTip": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\FrmMenu.cs",
               "RelativeToolTip": "br.com.projeto.view\\FrmMenu.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAUwBIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAA6wF0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-16T14:39:31.314Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FrmMenu.cs [Design]",
               "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\FrmMenu.cs",
               "RelativeDocumentMoniker": "br.com.projeto.view\\FrmMenu.cs",
@@ -67,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FuncionarioDAO.cs",
               "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.dao\\FuncionarioDAO.cs",
               "RelativeDocumentMoniker": "br.com.projeto.dao\\FuncionarioDAO.cs",
@@ -75,12 +91,11 @@
               "RelativeToolTip": "br.com.projeto.dao\\FuncionarioDAO.cs",
               "ViewState": "AgIAAOcAAAAAAAAAAAAgwAABAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T14:00:09.389Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-16T14:00:09.389Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Frmlogin.cs",
               "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\Frmlogin.cs",
               "RelativeDocumentMoniker": "br.com.projeto.view\\Frmlogin.cs",
@@ -92,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Frmlogin.cs [Design]",
               "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\Frmlogin.cs",
               "RelativeDocumentMoniker": "br.com.projeto.view\\Frmlogin.cs",
@@ -103,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
