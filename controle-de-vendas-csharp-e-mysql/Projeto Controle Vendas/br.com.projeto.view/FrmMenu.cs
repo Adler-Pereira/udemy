@@ -110,7 +110,7 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
 
         private void menuEstatisticas_Click(object sender, EventArgs e)
         {
-
+            new Frmestatisticas().ShowDialog();
         }
     }
 }

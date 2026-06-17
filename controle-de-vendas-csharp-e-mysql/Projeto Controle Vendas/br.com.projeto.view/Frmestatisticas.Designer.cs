@@ -69,7 +69,7 @@
             this.chartEstatisticas.Name = "chartEstatisticas";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
+            series1.Name = "Total Gasto";
             this.chartEstatisticas.Series.Add(series1);
             this.chartEstatisticas.Size = new System.Drawing.Size(845, 300);
             this.chartEstatisticas.TabIndex = 17;
@@ -83,7 +83,9 @@
             this.Controls.Add(this.chartEstatisticas);
             this.Controls.Add(this.panel1);
             this.Name = "Frmestatisticas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela de Estatísticas";
+            this.Load += new System.EventHandler(this.Frmestatisticas_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartEstatisticas)).EndInit();

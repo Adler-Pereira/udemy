@@ -150,5 +150,38 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
             }
         }
         #endregion
+
+        #region ListarGastoTotalPorCliente
+        public DataTable ListarGastoTotalPorCliente()
+        {
+            try
+            {
+                DataTable tabelaVendas = new DataTable();
+                string sql = @"SELECT
+                                   c.nome AS 'Nome',
+                                   SUM(v.total_venda) AS 'Total Gasto'
+                                   FROM tb_vendas v JOIN tb_clientes c ON (v.cliente_id = c.id)
+                               GROUP BY c.nome;";
+
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+
+                conexao.Open();
+
+                    executacmd.ExecuteNonQuery();
+                    MySqlDataAdapter da = new MySqlDataAdapter(executacmd);
+
+                    da.Fill(tabelaVendas);
+
+                conexao.Close();
+
+                return tabelaVendas;
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Aconteceu o erro: " + erro);
+                return null;
+            }
+        }
+        #endregion
     }
 }
