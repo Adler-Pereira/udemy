@@ -161,7 +161,7 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
                                    c.nome AS 'Nome',
                                    SUM(v.total_venda) AS 'Total Gasto'
                                    FROM tb_vendas v JOIN tb_clientes c ON (v.cliente_id = c.id)
-                               GROUP BY c.nome;";
+                               GROUP BY c.nome";
 
                 MySqlCommand executacmd = new MySqlCommand(sql, conexao);
 
@@ -172,6 +172,37 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
 
                     da.Fill(tabelaVendas);
 
+                conexao.Close();
+
+                return tabelaVendas;
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Aconteceu o erro: " + erro);
+                return null;
+            }
+        }
+        #endregion
+
+        #region ListarTotalVendasPorCliente
+        public DataTable ListarTotalVendasPorCliente()
+        {
+            try
+            {
+                DataTable tabelaVendas = new DataTable();
+                string sql = @"SELECT
+	                               c.nome AS 'Nome',
+	                               COUNT(v.total_venda) AS 'Total de Vendas'
+                               FROM tb_vendas v JOIN tb_clientes c ON (v.cliente_id = c.id)
+                               GROUP BY c.nome";
+
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+
+                conexao.Open();
+                    executacmd.ExecuteNonQuery();
+                    MySqlDataAdapter da = new MySqlDataAdapter(executacmd);
+
+                    da.Fill(tabelaVendas);
                 conexao.Close();
 
                 return tabelaVendas;

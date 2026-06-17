@@ -23,9 +23,13 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
 
             VendaDAO vdao = new VendaDAO();
 
-            chartEstatisticas.DataSource = vdao.ListarGastoTotalPorCliente();
-            chartEstatisticas.Series["Total Gasto"].XValueMember = "Nome";
-            chartEstatisticas.Series["Total Gasto"].YValueMembers = "Total Gasto";
+            chartTotalGasto.DataSource = vdao.ListarGastoTotalPorCliente();
+            chartTotalGasto.Series["TotalGasto"].XValueMember = "Nome";
+            chartTotalGasto.Series["TotalGasto"].YValueMembers = "Total Gasto";
+
+            chartTotalVendas.DataSource = vdao.ListarTotalVendasPorCliente();
+            chartTotalVendas.Series["TotalVendas"].XValueMember = "Nome";
+            chartTotalVendas.Series["TotalVendas"].YValueMembers = "Total de Vendas";
         }
     }
 }

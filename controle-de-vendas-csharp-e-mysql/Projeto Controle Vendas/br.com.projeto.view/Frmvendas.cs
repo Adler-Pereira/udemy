@@ -148,6 +148,11 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
             tela.ShowDialog();
         }
 
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
         private void Frmvendas_Load(object sender, EventArgs e)
         {
             txtdata.Text = DateTime.Now.ToShortDateString();

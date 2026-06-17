@@ -45,10 +45,10 @@
             this.menuVendas = new System.Windows.Forms.ToolStripMenuItem();
             this.menuNovaVenda = new System.Windows.Forms.ToolStripMenuItem();
             this.menuHistoricoVendas = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuEstatisticas = new System.Windows.Forms.ToolStripMenuItem();
             this.menuConfiguracoes = new System.Windows.Forms.ToolStripMenuItem();
             this.menuTrocarUsuario = new System.Windows.Forms.ToolStripMenuItem();
             this.menuSairSistema = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuEstatisticas = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.txtdata = new System.Windows.Forms.ToolStripStatusLabel();
@@ -186,16 +186,24 @@
             // menuNovaVenda
             // 
             this.menuNovaVenda.Name = "menuNovaVenda";
-            this.menuNovaVenda.Size = new System.Drawing.Size(180, 22);
+            this.menuNovaVenda.Size = new System.Drawing.Size(178, 22);
             this.menuNovaVenda.Text = "Nova Venda";
             this.menuNovaVenda.Click += new System.EventHandler(this.menuNovaVenda_Click);
             // 
             // menuHistoricoVendas
             // 
             this.menuHistoricoVendas.Name = "menuHistoricoVendas";
-            this.menuHistoricoVendas.Size = new System.Drawing.Size(180, 22);
+            this.menuHistoricoVendas.Size = new System.Drawing.Size(178, 22);
             this.menuHistoricoVendas.Text = "Histórico de Vendas";
             this.menuHistoricoVendas.Click += new System.EventHandler(this.menuHistoricoVendas_Click);
+            // 
+            // menuEstatisticas
+            // 
+            this.menuEstatisticas.Image = global::Projeto_Controle_Vendas.Properties.Resources.increase;
+            this.menuEstatisticas.Name = "menuEstatisticas";
+            this.menuEstatisticas.Size = new System.Drawing.Size(92, 20);
+            this.menuEstatisticas.Text = "Estatísticas";
+            this.menuEstatisticas.Click += new System.EventHandler(this.menuEstatisticas_Click);
             // 
             // menuConfiguracoes
             // 
@@ -220,14 +228,6 @@
             this.menuSairSistema.Size = new System.Drawing.Size(164, 22);
             this.menuSairSistema.Text = "Sair do sistema";
             this.menuSairSistema.Click += new System.EventHandler(this.menuSairSistema_Click);
-            // 
-            // menuEstatisticas
-            // 
-            this.menuEstatisticas.Image = global::Projeto_Controle_Vendas.Properties.Resources.increase;
-            this.menuEstatisticas.Name = "menuEstatisticas";
-            this.menuEstatisticas.Size = new System.Drawing.Size(92, 20);
-            this.menuEstatisticas.Text = "Estatísticas";
-            this.menuEstatisticas.Click += new System.EventHandler(this.menuEstatisticas_Click);
             // 
             // statusStrip1
             // 

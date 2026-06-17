@@ -125,6 +125,7 @@
             this.Name = "Frmlogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seja be, vindo(a) ao sistema";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Frmlogin_FormClosed);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

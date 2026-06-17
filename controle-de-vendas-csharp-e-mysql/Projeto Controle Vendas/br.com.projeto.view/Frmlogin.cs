@@ -30,5 +30,10 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
                 this.Hide();
             }
         }
+
+        private void Frmlogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
