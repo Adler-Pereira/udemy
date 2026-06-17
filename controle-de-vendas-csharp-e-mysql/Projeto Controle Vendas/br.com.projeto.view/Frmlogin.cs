@@ -27,7 +27,6 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
 
             if (fdao.EfetuarLogin(email, senha))
             {
-                new FrmMenu().Show();
                 this.Hide();
             }
         }

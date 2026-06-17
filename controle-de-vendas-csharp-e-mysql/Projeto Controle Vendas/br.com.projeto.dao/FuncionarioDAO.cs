@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using Projeto_Controle_Vendas.br.com.projeto.conexao;
 using Projeto_Controle_Vendas.br.com.projeto.model;
+using Projeto_Controle_Vendas.br.com.projeto.view;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -247,7 +248,26 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
 
                 if (reader.Read())
                 {
-                    MessageBox.Show("Login realizado com sucesso!");
+                    string nivel = reader.GetString("nivel_acesso");
+                    string nome = reader.GetString("nome");
+
+                    MessageBox.Show($"Seja bem vindo ao sistema, {nome}!");
+
+                    FrmMenu frmMenu = new FrmMenu();
+
+                    switch (nivel)
+                    {
+                        case "Administrador":
+                            break;
+                        case "Usuário":
+                            frmMenu.menuFuncionarios.Visible = false;
+                            break;
+                        default:
+                            break;
+                    }
+
+                    frmMenu.Show();
+
                     return true;
                 }
                 else

@@ -16,5 +16,10 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
         {
             InitializeComponent();
         }
+
+        private void FrmMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
