@@ -93,5 +93,13 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
         {
             new Frmhistorico().ShowDialog();
         }
+
+        private void menuSairSistema_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Deseja sair da aplicação?", "ATENÇÃO!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+                Application.Exit();
+        }
     }
 }
