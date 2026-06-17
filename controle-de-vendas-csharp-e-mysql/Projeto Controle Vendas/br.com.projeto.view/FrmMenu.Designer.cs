@@ -210,6 +210,7 @@
             this.menuTrocarUsuario.Name = "menuTrocarUsuario";
             this.menuTrocarUsuario.Size = new System.Drawing.Size(180, 22);
             this.menuTrocarUsuario.Text = "Trocar de usuário";
+            this.menuTrocarUsuario.Click += new System.EventHandler(this.menuTrocarUsuario_Click);
             // 
             // menuSairSistema
             // 

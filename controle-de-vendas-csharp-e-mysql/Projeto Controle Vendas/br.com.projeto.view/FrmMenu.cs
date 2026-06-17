@@ -101,5 +101,11 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
             if (result == DialogResult.Yes)
                 Application.Exit();
         }
+
+        private void menuTrocarUsuario_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Frmlogin().ShowDialog();
+        }
     }
 }
