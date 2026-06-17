@@ -374,6 +374,7 @@
             this.Controls.Add(this.tabProdutos);
             this.Controls.Add(this.panel1);
             this.Name = "Frmprodutos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Produtos";
             this.Load += new System.EventHandler(this.Frmprodutos_Load);
             this.panel1.ResumeLayout(false);
@@ -399,12 +400,10 @@
         private System.Windows.Forms.Button btnnovo;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataGridView tabelaProduto;
         private System.Windows.Forms.Button btnpesquisar;
         private System.Windows.Forms.TextBox txtpesquisa;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TabControl tabProdutos;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.NumericUpDown txtqtdestoque;
         private System.Windows.Forms.Label label4;
@@ -416,5 +415,7 @@
         private System.Windows.Forms.NumericUpDown txtpreco;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtdescricao;
+        public System.Windows.Forms.TabPage tabPage2;
+        public System.Windows.Forms.TabControl tabProdutos;
     }
 }

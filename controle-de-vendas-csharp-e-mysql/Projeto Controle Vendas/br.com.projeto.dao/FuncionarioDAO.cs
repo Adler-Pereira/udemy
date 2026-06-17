@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using Projeto_Controle_Vendas.br.com.projeto.conexao;
 using Projeto_Controle_Vendas.br.com.projeto.model;
+using Projeto_Controle_Vendas.br.com.projeto.view;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -224,6 +225,63 @@ namespace Projeto_Controle_Vendas.br.com.projeto.dao
             {
                 MessageBox.Show("Erro ao executar o comando sql: " + erro);
                 return null;
+            }
+        }
+        #endregion
+
+        #region EfetuarLogin
+        public bool EfetuarLogin(string email, string senha)
+        {
+            try
+            {
+                string sql = @"SELECT * FROM tb_funcionarios
+                               WHERE email = @email AND senha = @senha";
+
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+
+                executacmd.Parameters.AddWithValue("@email", email);
+                executacmd.Parameters.AddWithValue("@senha", senha);
+
+                conexao.Open();
+
+                MySqlDataReader reader = executacmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    string nivel = reader.GetString("nivel_acesso");
+                    string nome = reader.GetString("nome");
+
+                    MessageBox.Show($"Seja bem vindo ao sistema, {nome}!");
+
+                    FrmMenu frmMenu = new FrmMenu();
+
+                    frmMenu.txtusuario.Text = nome;
+
+                    switch (nivel)
+                    {
+                        case "Administrador":
+                            break;
+                        case "Usuário":
+                            frmMenu.menuFuncionarios.Visible = false;
+                            break;
+                        default:
+                            break;
+                    }
+
+                    frmMenu.Show();
+
+                    return true;
+                }
+                else
+                {
+                    MessageBox.Show("Email ou senha incorretos.");
+                    return false;
+                }
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Aconteceu o erro: " + erro);
+                return false;
             }
         }
         #endregion
