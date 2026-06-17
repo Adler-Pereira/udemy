@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|c:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\projeto controle vendas\\br.com.projeto.view\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.view\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|c:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\projeto controle vendas\\br.com.projeto.view\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.view\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|c:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\projeto controle vendas\\br.com.projeto.view\\frmestatisticas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.view\\frmestatisticas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|c:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\projeto controle vendas\\br.com.projeto.conexao\\connectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.conexao\\connectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|c:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\projeto controle vendas\\br.com.projeto.view\\frmestatisticas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.view\\frmestatisticas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|c:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\projeto controle vendas\\br.com.projeto.dao\\vendadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32FB7AE1-3D23-41CE-A5C6-DF9C1D6839F3}|Projeto Controle Vendas.csproj|solutionrelative:br.com.projeto.dao\\vendadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +34,87 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Frmestatisticas.cs",
+              "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\Frmestatisticas.cs",
+              "RelativeDocumentMoniker": "br.com.projeto.view\\Frmestatisticas.cs",
+              "ToolTip": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\Frmestatisticas.cs",
+              "RelativeToolTip": "br.com.projeto.view\\Frmestatisticas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T14:23:54.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VendaDAO.cs",
+              "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.dao\\VendaDAO.cs",
+              "RelativeDocumentMoniker": "br.com.projeto.dao\\VendaDAO.cs",
+              "ToolTip": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.dao\\VendaDAO.cs",
+              "RelativeToolTip": "br.com.projeto.dao\\VendaDAO.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAJcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T14:13:04.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConnectionFactory.cs",
+              "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.conexao\\ConnectionFactory.cs",
+              "RelativeDocumentMoniker": "br.com.projeto.conexao\\ConnectionFactory.cs",
+              "ToolTip": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.conexao\\ConnectionFactory.cs",
+              "RelativeToolTip": "br.com.projeto.conexao\\ConnectionFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T14:12:06.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Frmestatisticas.cs [Design]",
+              "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\Frmestatisticas.cs",
+              "RelativeDocumentMoniker": "br.com.projeto.view\\Frmestatisticas.cs",
+              "ToolTip": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\Frmestatisticas.cs [Design]",
+              "RelativeToolTip": "br.com.projeto.view\\Frmestatisticas.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T13:59:27.109Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmMenu.cs",
+              "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\FrmMenu.cs",
+              "RelativeDocumentMoniker": "br.com.projeto.view\\FrmMenu.cs",
+              "ToolTip": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\FrmMenu.cs",
+              "RelativeToolTip": "br.com.projeto.view\\FrmMenu.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAUwHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T13:57:23.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmMenu.cs [Design]",
+              "DocumentMoniker": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\FrmMenu.cs",
+              "RelativeDocumentMoniker": "br.com.projeto.view\\FrmMenu.cs",
+              "ToolTip": "C:\\dev\\estudos\\csharp\\udemy\\controle-de-vendas-csharp-e-mysql\\Projeto Controle Vendas\\br.com.projeto.view\\FrmMenu.cs [Design]",
+              "RelativeToolTip": "br.com.projeto.view\\FrmMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T13:54:01.287Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

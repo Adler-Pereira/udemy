@@ -107,5 +107,10 @@ namespace Projeto_Controle_Vendas.br.com.projeto.view
             this.Hide();
             new Frmlogin().ShowDialog();
         }
+
+        private void menuEstatisticas_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

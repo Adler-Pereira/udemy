@@ -48,6 +48,7 @@
             this.menuConfiguracoes = new System.Windows.Forms.ToolStripMenuItem();
             this.menuTrocarUsuario = new System.Windows.Forms.ToolStripMenuItem();
             this.menuSairSistema = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuEstatisticas = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.txtdata = new System.Windows.Forms.ToolStripStatusLabel();
@@ -68,6 +69,7 @@
             this.menuFornecedores,
             this.menuProdutos,
             this.menuVendas,
+            this.menuEstatisticas,
             this.menuConfiguracoes});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -184,14 +186,14 @@
             // menuNovaVenda
             // 
             this.menuNovaVenda.Name = "menuNovaVenda";
-            this.menuNovaVenda.Size = new System.Drawing.Size(178, 22);
+            this.menuNovaVenda.Size = new System.Drawing.Size(180, 22);
             this.menuNovaVenda.Text = "Nova Venda";
             this.menuNovaVenda.Click += new System.EventHandler(this.menuNovaVenda_Click);
             // 
             // menuHistoricoVendas
             // 
             this.menuHistoricoVendas.Name = "menuHistoricoVendas";
-            this.menuHistoricoVendas.Size = new System.Drawing.Size(178, 22);
+            this.menuHistoricoVendas.Size = new System.Drawing.Size(180, 22);
             this.menuHistoricoVendas.Text = "Histórico de Vendas";
             this.menuHistoricoVendas.Click += new System.EventHandler(this.menuHistoricoVendas_Click);
             // 
@@ -208,16 +210,24 @@
             // menuTrocarUsuario
             // 
             this.menuTrocarUsuario.Name = "menuTrocarUsuario";
-            this.menuTrocarUsuario.Size = new System.Drawing.Size(180, 22);
+            this.menuTrocarUsuario.Size = new System.Drawing.Size(164, 22);
             this.menuTrocarUsuario.Text = "Trocar de usuário";
             this.menuTrocarUsuario.Click += new System.EventHandler(this.menuTrocarUsuario_Click);
             // 
             // menuSairSistema
             // 
             this.menuSairSistema.Name = "menuSairSistema";
-            this.menuSairSistema.Size = new System.Drawing.Size(180, 22);
+            this.menuSairSistema.Size = new System.Drawing.Size(164, 22);
             this.menuSairSistema.Text = "Sair do sistema";
             this.menuSairSistema.Click += new System.EventHandler(this.menuSairSistema_Click);
+            // 
+            // menuEstatisticas
+            // 
+            this.menuEstatisticas.Image = global::Projeto_Controle_Vendas.Properties.Resources.increase;
+            this.menuEstatisticas.Name = "menuEstatisticas";
+            this.menuEstatisticas.Size = new System.Drawing.Size(92, 20);
+            this.menuEstatisticas.Text = "Estatísticas";
+            this.menuEstatisticas.Click += new System.EventHandler(this.menuEstatisticas_Click);
             // 
             // statusStrip1
             // 
@@ -333,5 +343,6 @@
         public System.Windows.Forms.ToolStripStatusLabel txthora;
         public System.Windows.Forms.ToolStripStatusLabel txtusuario;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripMenuItem menuEstatisticas;
     }
 }
